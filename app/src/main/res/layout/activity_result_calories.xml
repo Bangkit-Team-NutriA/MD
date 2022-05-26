@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search_calories.ResultCaloriesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/app_name"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_photo" />
+
+
+        <TextView
+            android:id="@+id/tv_carbohydrate"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Carbohydrate"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_fat"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Fat"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_protein"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Protein"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_calories"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Calories"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <ImageView
+            android:id="@+id/iv_carbohydrate"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_carbohydrate"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/tv_carbohydrate"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="@+id/tv_carbohydrate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_carbohydrate" />
+
+
+        <ImageView
+            android:id="@+id/iv_fat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_fat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/tv_fat"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/tv_fat"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fat" />
+
+        <ImageView
+            android:id="@+id/iv_protein"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_protein"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/tv_protein"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="@+id/tv_protein"
+            app:layout_constraintTop_toBottomOf="@+id/tv_protein" />
+
+        <ImageView
+            android:id="@+id/iv_calories"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_calories"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/tv_calories"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/tv_calories"
+            app:layout_constraintTop_toBottomOf="@+id/tv_calories" />
+
+        <TextView
+            android:id="@+id/tv_carbohydrate_value"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="114.19 gr"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/iv_carbohydrate"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="@+id/iv_carbohydrate"
+            app:layout_constraintTop_toBottomOf="@+id/iv_carbohydrate" />
+
+        <TextView
+            android:id="@+id/tv_protein_value"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="1.54 gr"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/iv_fat"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toStartOf="@+id/iv_fat"
+            app:layout_constraintTop_toBottomOf="@+id/iv_fat" />
+
+
+        <TextView
+            android:id="@+id/tv_fat_value"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="6.04 gr"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/iv_protein"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="@+id/iv_protein"
+            app:layout_constraintTop_toBottomOf="@+id/iv_protein" />
+
+        <TextView
+            android:id="@+id/tv_calories_value"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:text="197 kcl"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:transitionName="tv_name_detail_transition"
+            app:layout_constraintEnd_toEndOf="@+id/iv_calories"
+            app:layout_constraintStart_toStartOf="@+id/iv_calories"
+            app:layout_constraintTop_toBottomOf="@+id/iv_calories" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

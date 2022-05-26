@@ -1,0 +1,33 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="30">
+  <path
+      android:pathData="M15,15m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:fillColor="#10A370"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M21,9H10C9.735,9 9.48,9.105 9.293,9.293C9.105,9.48 9,9.735 9,10V18.5C9,18.765 9.105,19.02 9.293,19.207C9.48,19.395 9.735,19.5 10,19.5H12V22L15.12,19.5H21C21.265,19.5 21.52,19.395 21.707,19.207C21.895,19.02 22,18.765 22,18.5V10C22,9.735 21.895,9.48 21.707,9.293C21.52,9.105 21.265,9 21,9Z"
+      android:strokeLineJoin="round"
+      android:fillColor="#00000000"
+      android:strokeColor="#ffffff"
+      android:strokeLineCap="round"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M14,13C14,12.703 14.088,12.413 14.253,12.167C14.418,11.92 14.652,11.728 14.926,11.614C15.2,11.501 15.502,11.471 15.793,11.529C16.084,11.587 16.351,11.73 16.561,11.939C16.77,12.149 16.913,12.416 16.971,12.707C17.029,12.998 16.999,13.3 16.886,13.574C16.772,13.848 16.58,14.082 16.333,14.247C16.087,14.412 15.797,14.5 15.5,14.5V15"
+      android:strokeLineJoin="round"
+      android:fillColor="#00000000"
+      android:strokeColor="#ffffff"
+      android:strokeLineCap="round"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M15.5,17.5C15.362,17.5 15.25,17.388 15.25,17.25C15.25,17.112 15.362,17 15.5,17"
+      android:strokeLineJoin="round"
+      android:fillColor="#00000000"
+      android:strokeColor="#ffffff"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M15.5,17C15.224,17 15,17.224 15,17.5C15,17.776 15.224,18 15.5,18V17ZM15.5,16.5C15.224,16.5 15,16.724 15,17C15,17.276 15.224,17.5 15.5,17.5V16.5ZM15.5,18C15.914,18 16.25,17.664 16.25,17.25H15.25C15.25,17.112 15.362,17 15.5,17V18ZM16.25,17.25C16.25,16.836 15.914,16.5 15.5,16.5V17.5C15.362,17.5 15.25,17.388 15.25,17.25H16.25Z"
+      android:fillColor="#ffffff"/>
+</vector>

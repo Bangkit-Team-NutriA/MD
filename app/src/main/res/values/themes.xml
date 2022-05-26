@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NutriA" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/crayola</item>
+        <item name="colorPrimaryVariant">@color/teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Splash Screen -->
+    <style name="Theme.NutriA.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/crayola</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo_stroke_splash_screen</item>
+
+        <!--    <item name="windowSplashScreenBackground">@color/white</item>       -->
+        <!--    <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>   -->
+        <item name="postSplashScreenTheme">@style/Theme.NutriA</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+</resources>
