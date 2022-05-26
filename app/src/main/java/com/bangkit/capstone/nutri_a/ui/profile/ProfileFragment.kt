@@ -44,17 +44,17 @@ class ProfileFragment : Fragment() {
 
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
 
-        binding.etEdit.setOnClickListener {
+        binding.btnEdit.setOnClickListener {
             val intent = Intent(activity, EditProfileActivity::class.java)
             startActivity(intent)
         }
 
-        binding.etSetting.setOnClickListener {
+        binding.btnSetting.setOnClickListener {
             val intent = Intent(activity, SettingsActivity::class.java)
             startActivity(intent)
         }
 
-        binding.etLogout.setOnClickListener {
+        binding.btnLogout.setOnClickListener {
             val intent = Intent(activity, LoginActivity::class.java)
             startActivity(intent)
             activity?.finish()

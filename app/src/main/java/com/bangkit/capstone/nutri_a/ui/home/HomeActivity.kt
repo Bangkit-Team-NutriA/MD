@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.hide();
+        supportActionBar?.hide()
 
         binding.bottomNavigationView.menu.getItem(2).isEnabled = false
 

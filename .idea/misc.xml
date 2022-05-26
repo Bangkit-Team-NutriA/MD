@@ -54,6 +54,27 @@
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/recipes_item.xml" value="0.1" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16545532278751604" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20521590423257802" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/bg_button.xml" value="0.1" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1275" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.1275" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/ic_camera.xml" value="0.132" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_camera.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_detail_recipes.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_edit_profile.xml" value="0.215962441314554" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_home.xml" value="0.15057915057915058" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_nutrition_calculate.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_recommend_food.xml" value="0.10989583333333333" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_recommend_recipes.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_result_calories.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_search_calories.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_profile.xml" value="0.22772277227722773" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_recipes.xml" value="0.25" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_recommend.xml" value="0.264" />
+        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/recipes_item.xml" value="0.25" />
       </map>
     </option>
   </component>

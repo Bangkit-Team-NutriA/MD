@@ -23,14 +23,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Selamat Datang, "
+                android:text="@string/title_greetings"
                 android:textSize="16sp"
                 android:textStyle="normal"/>
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jone Doe"
+                android:text="@string/value_name"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="none"
-                android:drawableStart="@drawable/ic_calculator"/>
+                app:drawableStartCompat="@drawable/ic_calculator" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,14 +66,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kalkulator Nutrisi"
+                    android:text="@string/text_calculator_nutrition"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/crayola"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Hitung nutrisi harianmu menggunakan kalkulator ini!"
+                    android:text="@string/text_desc_calculator_nutrition"
                     android:textSize="12sp"/>
 
             </LinearLayout>
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="none"
-                android:drawableStart="@drawable/ic_food"/>
+                app:drawableStartCompat="@drawable/ic_food" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,14 +109,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Makanan Harian"
+                    android:text="@string/text_daily_food"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/crayola"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Rekomendasi makanan harian yang sesuai dengan nutrisimu!"
+                    android:text="@string/text_desc_daily_food"
                     android:textSize="12sp"/>
 
             </LinearLayout>
@@ -152,14 +152,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rekomendasi Resep"
+                    android:text="@string/text_recipe_recommendations"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/crayola"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Bahan di kulkas terbatas? cari rekomendasi resep disini!"
+                    android:text="@string/text_desc_recipe_recommendations"
                     android:textSize="12sp"/>
 
             </LinearLayout>

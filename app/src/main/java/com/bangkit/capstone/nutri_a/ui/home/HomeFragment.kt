@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.databinding.FragmentHomeBinding
-import com.bangkit.capstone.nutri_a.ui.recommend.RecommendFragment
 
 class HomeFragment : Fragment() {
 
@@ -20,7 +18,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.calculatorLayout.setOnClickListener {
@@ -29,6 +27,8 @@ class HomeFragment : Fragment() {
         }
 
         binding.foodLayout.setOnClickListener {
+            val intent =  Intent(activity, RecommendFoodActivity::class.java)
+            startActivity(intent)
 
         }
 
