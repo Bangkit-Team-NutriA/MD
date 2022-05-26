@@ -12,9 +12,8 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
-
-
 
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -40,5 +39,9 @@ class RegisterActivity : AppCompatActivity() {
         val format = "dd-mm-yyyy"
         val sdf = SimpleDateFormat(format, Locale.UK)
         binding.btnDpBirth.text = sdf.format(calendar.time)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

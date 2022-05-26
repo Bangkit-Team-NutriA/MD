@@ -6,7 +6,12 @@ import com.bangkit.capstone.nutri_a.R
 
 class DetailRecipesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_recipes)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

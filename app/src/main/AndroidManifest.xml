@@ -20,22 +20,32 @@
         android:theme="@style/Theme.NutriA"
         tools:targetApi="31">
         <activity
+            android:name=".ui.home.RecommendFoodActivity"
+            android:label="Rekomendasi Makanan"
+            android:exported="false" />
+        <activity
             android:name=".ui.settings.SettingsActivity"
+            android:label="Pengaturan"
             android:exported="false" />
         <activity
             android:name=".ui.home.RecommendRecipesActivity"
+            android:label="Rekomendasi Resep"
             android:exported="false" />
         <activity
             android:name=".ui.search_calories.ResultCaloriesActivity"
+            android:label="Hasil Prediksi"
             android:exported="false" />
         <activity
             android:name=".ui.profile.EditProfileActivity"
+            android:label="@string/title_Profile"
             android:exported="false" />
         <activity
             android:name=".ui.recipes.DetailRecipesActivity"
+            android:label="Hasil Prediksi"
             android:exported="false" />
         <activity
             android:name=".ui.home.NutritionCalculateActivity"
+            android:label="Kalkulator Nutrisi"
             android:exported="false" />
         <activity
             android:name=".ui.search_calories.CameraActivity"
@@ -45,6 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.signup.RegisterActivity"
+            android:label="@string/text_register"
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"

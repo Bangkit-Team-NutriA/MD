@@ -6,9 +6,14 @@ import com.bangkit.capstone.nutri_a.R
 
 class NutritionCalculateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nutrition_calculate)
 
-        actionBar?.title = "Calculator Nutrition";
+        actionBar?.title = "Kalkulator Nutrisi"
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

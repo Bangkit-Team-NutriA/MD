@@ -46,7 +46,8 @@
                 android:background="@android:color/transparent"
                 android:outlineSpotShadowColor="@android:color/transparent"
                 app:labelVisibilityMode="labeled"
-                app:menu="@menu/bottom_navigation_menu" />
+                app:menu="@menu/bottom_navigation_menu"
+                tools:ignore="UnusedAttribute" />
 
         </com.google.android.material.bottomappbar.BottomAppBar>
 

@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Nutri-A</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home">Beranda</string>
     <string name="title_home">Home</string>
     <string name="title_recommend">Recommend</string>
     <string name="title_recipes">Recipes</string>
     <string name="title_search_calories">Search Calories</string>
     <string name="title_Profile">Profile</string>
-
     <string name="prompt_login">Login</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -34,6 +33,70 @@
     <string name="failed_show_camera">Failed to show camera</string>
     <string name="food_name">Food Name</string>
     <string name="ingredients">Ingredients</string>
+    <string name="carbohydrate">Carbohydrate</string>
+    <string name="fat">Fat</string>
+    <string name="protein">Protein</string>
+    <string name="calories">Calories</string>
+    <string name="value_carbohydrate">114.19 gr</string>
+    <string name="value_fat">1.54 gr</string>
+    <string name="value_protein">6.04 gr</string>
+    <string name="value_calories">197 kcl</string>
+    <string name="value_name">Jane Doe</string>
+    <string name="value_gender">Perempuan</string>
+    <string name="value_height">168.0 cm</string>
+    <string name="value_weight">45.0 kg</string>
+    <string name="text_save">Simpan</string>
+    <string name="text_register">Register</string>
+    <string name="text_ingredients_1">Bahan 1</string>
+    <string name="text_add_other_ingredients">+ Bahan yang lainnya</string>
+    <string name="text_search">Cari</string>
+    <string name="title_nutrition_needs">Kebutuhan Nutrisi Harianmu</string>
+    <string name="text_calories">Kalori</string>
+    <string name="value_calories_need">1500 Kal</string>
+    <string name="text_fat">Lemak</string>
+    <string name="value_fat_needs">25 gr</string>
+    <string name="text_protein">Protein</string>
+    <string name="text_carbohydrate">Karbohidrat</string>
+    <string name="value_carbohydrate_needs">225 gr</string>
+    <string name="title_recommend_needs">Rekomendasi Makanan Untukmu</string>
+    <string name="text_breakfast">Pagi</string>
+    <string name="text_lunch">Siang</string>
+    <string name="text_dinner">Malam</string>
+    <string name="value_protein_needs">57 gr</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_full_name">Full Name</string>
+    <string name="text_date_of_birth">Date of Birth</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_height">Height</string>
+    <string name="text_exercise_week">How many times do you exercise in a week</string>
+    <string name="text_language">Bahasa</string>
+    <string name="text_security_policy">Kebijakan Keamanan</string>
+    <string name="text_faq">FAQ</string>
+    <string name="text_about">Tentang</string>
+    <string name="title_greetings">Selamat Datang, </string>
+    <string name="text_calculator_nutrition">Kalkulator Nutrisi</string>
+    <string name="text_desc_calculator_nutrition">Hitung nutrisi harianmu menggunakan kalkulator ini!</string>
+    <string name="text_daily_food">Makanan Harian</string>
+    <string name="text_desc_daily_food">Rekomendasi makanan harian yang sesuai dengan nutrisimu!</string>
+    <string name="text_recipe_recommendations">Rekomendasi Resep</string>
+    <string name="text_desc_recipe_recommendations">Bahan di kulkas terbatas? cari rekomendasi resep disini!</string>
+    <string name="text_setting">Pengaturan</string>
+    <string name="text_logout">Keluar</string>
+    <string name="title_calories_needs">Hitung Kalori Harianmu!</string>
+    <string name="text_age">Age</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_workout_week">Workout / Week</string>
+    <string name="text_recommend_food">Rekomendasi Makanan Saya</string>
+    <string name="text_use_mydata">Gunakan Data Saya</string>
+    <string name="text_detail">Detail</string>
+    <!-- TODO: (dropdown menu) -->
+    <string-array name="input_ingredients">
+        <item>Bawang Merah</item>
+        <item>Bawang Putih</item>
+        <item>Kunyit</item>
+        <item>Lada</item>
+    </string-array>
 
 
 </resources>

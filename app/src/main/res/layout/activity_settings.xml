@@ -10,24 +10,24 @@
         android:id="@+id/layout_bahasa"
         android:layout_width="325dp"
         android:layout_height="65dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
-        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_baseline_language_24" />
+            app:drawableStartCompat="@drawable/ic_baseline_language_24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="18dp"
-            android:text="Bahasa"
+            android:text="@string/text_language"
             android:textColor="@color/crayola"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -38,26 +38,27 @@
         android:id="@+id/layout_policy"
         android:layout_width="325dp"
         android:layout_height="65dp"
-        android:background="@drawable/bg_edit_text"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_bahasa">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_setting"/>
+            app:drawableStartCompat="@drawable/ic_setting" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
             android:layout_gravity="center_vertical"
-            android:text="Kebijakan Keamanan"
+            android:layout_marginStart="18dp"
+            android:text="@string/text_security_policy"
             android:textColor="@color/crayola"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -65,26 +66,27 @@
         android:id="@+id/layout_faq"
         android:layout_width="325dp"
         android:layout_height="65dp"
-        android:background="@drawable/bg_edit_text"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_policy">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_faq"/>
+            app:drawableStartCompat="@drawable/ic_faq" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
             android:layout_gravity="center_vertical"
-            android:text="FAQ"
+            android:layout_marginStart="18dp"
+            android:text="@string/text_faq"
             android:textColor="@color/crayola"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -92,26 +94,27 @@
         android:id="@+id/layout_about"
         android:layout_width="325dp"
         android:layout_height="65dp"
-        android:background="@drawable/bg_edit_text"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_faq">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_about"/>
+            app:drawableStartCompat="@drawable/ic_about" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
             android:layout_gravity="center_vertical"
-            android:text="Tentang"
+            android:layout_marginStart="18dp"
+            android:text="@string/text_about"
             android:textColor="@color/crayola"
             android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

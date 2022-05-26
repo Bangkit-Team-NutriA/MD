@@ -1,4 +1,4 @@
-package com.bangkit.capstone.nutria.utils
+package com.bangkit.capstone.nutri_a.utils
 
 import android.content.Context
 import android.text.Editable

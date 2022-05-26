@@ -10,6 +10,17 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp">
 
+        <TextView
+            android:id="@+id/tv_count_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/title_calories_needs"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/inputLayout"
@@ -17,15 +28,15 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="42dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="@+id/tv_count_calories">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tinggi Badan"
+                android:text="@string/text_height"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 
@@ -35,14 +46,14 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="numberSigned"
                 android:paddingTop="9dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14sp"
-                android:text="Berat Badan"
+                android:text="@string/text_weight"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 
@@ -52,14 +63,14 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="numberSigned"
                 android:paddingTop="9dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14sp"
-                android:text="Umur"
+                android:text="@string/text_age"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 
@@ -69,14 +80,14 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="numberSigned"
                 android:paddingTop="9dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14sp"
-                android:text="Jenis Kelamin"
+                android:text="@string/text_gender"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 
@@ -94,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14sp"
-                android:text="Olahraga / Minggu"
+                android:text="@string/text_workout_week"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 
@@ -115,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="32dp"
-            android:text="Rekomendasi Makanan Saya"
+            android:text="@string/text_recommend_food"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,14 +138,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:gravity="center"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="50dp"
-            android:text="Gunakan Data Saya"
+            android:gravity="center"
+            android:text="@string/text_use_mydata"
             android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_recommend"/>
+            app:layout_constraintTop_toBottomOf="@+id/btn_recommend" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
