@@ -20,33 +20,39 @@
         android:theme="@style/Theme.NutriA"
         tools:targetApi="31">
         <activity
-            android:name=".ui.home.RecommendFoodActivity"
-            android:label="Rekomendasi Makanan"
+            android:name=".ui.settings.AboutActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.settings.FAQActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.RecommendFoodActivity"
+            android:exported="false"
+            android:label="Rekomendasi Makanan" />
         <activity
             android:name=".ui.settings.SettingsActivity"
-            android:label="Pengaturan"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Pengaturan" />
         <activity
             android:name=".ui.home.RecommendRecipesActivity"
-            android:label="Rekomendasi Resep"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Rekomendasi Resep" />
         <activity
             android:name=".ui.search_calories.ResultCaloriesActivity"
-            android:label="Hasil Prediksi"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Hasil Prediksi" />
         <activity
             android:name=".ui.profile.EditProfileActivity"
-            android:label="@string/title_Profile"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Profile" />
         <activity
             android:name=".ui.recipes.DetailRecipesActivity"
-            android:label="Hasil Prediksi"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Hasil Prediksi" />
         <activity
             android:name=".ui.home.NutritionCalculateActivity"
-            android:label="Kalkulator Nutrisi"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Kalkulator Nutrisi" />
         <activity
             android:name=".ui.search_calories.CameraActivity"
             android:exported="false" />
@@ -55,8 +61,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.signup.RegisterActivity"
-            android:label="@string/text_register"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/text_register" />
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="false"

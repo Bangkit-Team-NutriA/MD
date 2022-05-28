@@ -70,20 +70,38 @@
                 android:inputType="text"/>
 
             <TextView
+                android:id="@+id/tv_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jenis Kelamin"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"
                 android:layout_marginTop="14sp"/>
-            <EditText
-                android:id="@+id/et_gender"
+            <RadioGroup
+                android:id="@+id/rb_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_edit_text"
-                android:ems="10"
-                android:paddingTop="9dp"
-                android:inputType="text"/>
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_gender">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:checked="true"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/radio_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/female" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/tv_exercise"

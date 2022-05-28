@@ -19,19 +19,19 @@ import com.bangkit.capstone.nutri_a.databinding.ActivityCameraBinding
 import com.bangkit.capstone.nutri_a.utils.createFile
 
 class CameraActivity : AppCompatActivity() {
-    private lateinit var cameraBinding: ActivityCameraBinding
+    private lateinit var binding: ActivityCameraBinding
     private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        cameraBinding = ActivityCameraBinding.inflate(layoutInflater)
-        setContentView(cameraBinding.root)
+        binding = ActivityCameraBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        cameraBinding.captureImage.setOnClickListener { takePhoto() }
+        binding.captureImage.setOnClickListener { takePhoto() }
 
-        cameraBinding.switchCamera.setOnClickListener {
+        binding.switchCamera.setOnClickListener {
             cameraSelector =
                 if (cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA) CameraSelector.DEFAULT_FRONT_CAMERA
                 else CameraSelector.DEFAULT_BACK_CAMERA
@@ -87,7 +87,7 @@ class CameraActivity : AppCompatActivity() {
             val preview = Preview.Builder()
                 .build()
                 .also {
-                    it.setSurfaceProvider(cameraBinding.viewFinder.surfaceProvider)
+                    it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
                 }
 
             imageCapture = ImageCapture.Builder().build()

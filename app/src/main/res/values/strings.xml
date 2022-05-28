@@ -90,6 +90,8 @@
     <string name="text_recommend_food">Rekomendasi Makanan Saya</string>
     <string name="text_use_mydata">Gunakan Data Saya</string>
     <string name="text_detail">Detail</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
         <item>Bawang Merah</item>
