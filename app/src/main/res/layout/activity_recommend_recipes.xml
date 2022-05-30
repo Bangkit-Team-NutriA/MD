@@ -1,299 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.RecommendRecipesActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ingredientsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv_nutrition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="32dp"
-            android:text="@string/title_nutrition_needs"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <LinearLayout
-            android:id="@+id/nutritionLayout"
-            android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/bg_edit_text"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_nutrition">
-
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/text_calories"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_calories"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/value_calories_need"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/text_fat"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_fat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/value_fat_needs"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/text_protein"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_protein"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/value_protein_needs"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/text_carbohydrate"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/tv_carbohydrate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/value_carbohydrate_needs"
-                    android:textColor="@color/crayola"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_recommendation_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="@string/title_recommend_needs"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nutritionLayout" />
+            android:text="@string/text_ingredients_1"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:id="@+id/breakfastLayout"
+        <RelativeLayout
+            android:id="@+id/chooseIngredientsLayout"
             android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_edit_text"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_recommendation_food" >
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edit_text">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_breakfast"
-                android:textSize="22sp" />
+            <Spinner
+                android:id="@+id/inputIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+    </LinearLayout>
 
-                <include
-                    android:id="@+id/cv_breakfast_1"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="8dp"
-                    />
-                <include
-                    android:id="@+id/cv_breakfast_2"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
-                <include
-                    android:id="@+id/cv_breakfast_3"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
+    <TextView
+        android:id="@+id/tv_addIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/text_add_other_ingredients"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ingredientsLayout"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientsLayout" />
 
+    <Button
+        android:id="@+id/btn_search"
+        style="@style/Button"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:text="@string/text_search"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/lunchLayout"
-            android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_edit_text"
-            android:layout_marginTop="21dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/breakfastLayout" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_lunch"
-                android:textSize="22sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <include
-                    android:id="@+id/cv_lunch_1"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="8dp"
-                    />
-
-                <include
-                    android:id="@+id/cv_lunch_2"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
-                <include
-                    android:id="@+id/cv_lunch_3"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/dinnerLayout"
-            android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_edit_text"
-            android:layout_marginTop="21dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lunchLayout" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/text_dinner"
-                android:textSize="22sp" />
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <include
-                    android:id="@+id/cv_diner_1"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="8dp"
-                    />
-                <include
-                    android:id="@+id/cv_diner_2"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
-                <include
-                    android:id="@+id/cv_diner_3"
-                    layout="@layout/recipes_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="12dp"
-                    />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

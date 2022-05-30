@@ -44,7 +44,7 @@
         <activity
             android:name=".ui.profile.EditProfileActivity"
             android:exported="false"
-            android:label="@string/title_Profile" />
+            android:label="Edit Profile" />
         <activity
             android:name=".ui.recipes.DetailRecipesActivity"
             android:exported="false"

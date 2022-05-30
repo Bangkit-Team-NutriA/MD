@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.bangkit.capstone.nutri_a.databinding.FragmentProfileBinding
 import com.bangkit.capstone.nutri_a.ui.settings.SettingsActivity
-import com.bangkit.capstone.nutri_a.ui.signup.LoginActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -52,12 +51,6 @@ class ProfileFragment : Fragment() {
         binding.btnSetting.setOnClickListener {
             val intent = Intent(activity, SettingsActivity::class.java)
             startActivity(intent)
-        }
-
-        binding.btnLogout.setOnClickListener {
-            val intent = Intent(activity, LoginActivity::class.java)
-            startActivity(intent)
-            activity?.finish()
         }
 
         return binding.root

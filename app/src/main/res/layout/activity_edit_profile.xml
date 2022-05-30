@@ -23,6 +23,7 @@
             tools:src="@tools:sample/avatars" />
 
         <TextView
+            android:id="@+id/icon_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

@@ -92,6 +92,10 @@
     <string name="text_detail">Detail</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+
+    <string name="login_success">Login success</string>
+    <string name="login_failed">Login Failed</string>
+
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
         <item>Bawang Merah</item>
