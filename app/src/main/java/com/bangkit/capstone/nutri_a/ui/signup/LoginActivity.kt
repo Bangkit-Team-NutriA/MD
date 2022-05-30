@@ -84,8 +84,8 @@ class LoginActivity : AppCompatActivity() {
                 showLoading(false)
                 val responseBody = response.body()
                 Log.d(TAG, "onResponse: $responseBody")
-                if(response.isSuccessful && responseBody?.message == "success") {
-                    viewModel.saveUser(User(responseBody.loginResult.token, true))
+                if(response.isSuccessful && responseBody?.status == "success") {
+                    viewModel.saveUser(User(responseBody.token, true))
                     Toast.makeText(this@LoginActivity, getString(R.string.login_success), Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                     startActivity(intent)

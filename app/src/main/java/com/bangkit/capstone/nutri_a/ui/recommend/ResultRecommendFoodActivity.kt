@@ -4,16 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bangkit.capstone.nutri_a.R
 
-class RecommendFoodActivity : AppCompatActivity() {
+class ResultRecommendFoodActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recommend_food)
-
-
-    }
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
+        setContentView(R.layout.activity_result_recommend_food)
     }
 }

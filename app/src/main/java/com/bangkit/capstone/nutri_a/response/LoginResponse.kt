@@ -3,14 +3,13 @@ package com.bangkit.capstone.nutri_a.response
 import com.google.gson.annotations.SerializedName
 
 data class LoginResponse(
-    @field:SerializedName("loginResult")
-    val loginResult: LoginResult,
 
-    @field:SerializedName("error")
-    val error: Boolean,
+    @SerializedName("status")
+    val status: String,
 
-    @field:SerializedName("message")
-    val message: String
+    @SerializedName("token")
+    val token: String
+
 )
 
 data class LoginResult(
