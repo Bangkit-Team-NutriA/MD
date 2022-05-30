@@ -95,6 +95,7 @@
 
     <string name="login_success">Login success</string>
     <string name="login_failed">Login Failed</string>
+    <string name="logot_success">Logout Success</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">

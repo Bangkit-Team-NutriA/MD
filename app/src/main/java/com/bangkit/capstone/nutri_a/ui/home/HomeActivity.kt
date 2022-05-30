@@ -36,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
 
         setupViewModel()
 
-        binding.bottomNavigationView.menu.getItem(2).isEnabled = false
+        binding.bottomNavigationView.menu.getItem(1).isEnabled = false
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController

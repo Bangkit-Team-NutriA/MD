@@ -5,10 +5,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
+import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.databinding.ActivitySettingsBinding
 import com.bangkit.capstone.nutri_a.ui.signup.LoginActivity
 import com.bangkit.capstone.nutri_a.utils.UserPreference
@@ -49,6 +51,7 @@ class SettingsActivity : AppCompatActivity() {
             viewModel.logout()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            Toast.makeText(this@SettingsActivity, getString(R.string.logot_success), Toast.LENGTH_SHORT).show()
             finish()
 
         }

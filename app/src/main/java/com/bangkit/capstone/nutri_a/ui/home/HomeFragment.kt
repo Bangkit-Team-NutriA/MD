@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bangkit.capstone.nutri_a.databinding.FragmentHomeBinding
-import com.bangkit.capstone.nutri_a.ui.recipes.RecipesFragment
-import com.bangkit.capstone.nutri_a.ui.recommend.RecommendFragment
+import com.bangkit.capstone.nutri_a.ui.recipes.RecommendRecipesActivity
+import com.bangkit.capstone.nutri_a.ui.recommend.RecommendFoodActivity
 
 class HomeFragment : Fragment() {
 
@@ -29,13 +29,13 @@ class HomeFragment : Fragment() {
         }
 
         binding.foodLayout.setOnClickListener {
-            val intent =  Intent(activity, RecommendFragment::class.java)
+            val intent =  Intent(activity, RecommendFoodActivity::class.java)
             startActivity(intent)
 
         }
 
         binding.recipesLayout.setOnClickListener {
-            val intent = Intent(activity, RecipesFragment::class.java)
+            val intent = Intent(activity, RecommendRecipesActivity::class.java)
             startActivity(intent)
         }
 

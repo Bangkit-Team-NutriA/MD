@@ -26,7 +26,7 @@
             android:name=".ui.settings.FAQActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.home.RecommendFoodActivity"
+            android:name=".ui.recommend.RecommendFoodActivity"
             android:exported="false"
             android:label="Rekomendasi Makanan" />
         <activity
@@ -34,7 +34,7 @@
             android:exported="false"
             android:label="Pengaturan" />
         <activity
-            android:name=".ui.home.RecommendRecipesActivity"
+            android:name=".ui.recipes.RecommendRecipesActivity"
             android:exported="false"
             android:label="Rekomendasi Resep" />
         <activity

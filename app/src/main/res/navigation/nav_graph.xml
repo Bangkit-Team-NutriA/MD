@@ -15,13 +15,4 @@
         android:name="com.bangkit.capstone.nutri_a.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
-    <fragment
-        android:id="@+id/recommendFragment"
-        android:name="com.bangkit.capstone.nutri_a.ui.recommend.RecommendFragment"
-        android:label="fragment_recommend"
-        tools:layout="@layout/fragment_recommend" />
-    <fragment
-        android:id="@+id/recipesFragment"
-        android:name="com.bangkit.capstone.nutri_a.ui.recipes.RecipesFragment"
-        android:label="RecipesFragment" />
 </navigation>

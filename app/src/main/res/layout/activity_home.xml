@@ -43,6 +43,8 @@
                 android:id="@+id/bottom_navigation_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:background="@android:color/transparent"
                 android:outlineSpotShadowColor="@android:color/transparent"
                 app:labelVisibilityMode="labeled"
@@ -55,6 +57,8 @@
             android:id="@+id/fb_search_recipes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/crayola"
+            app:tint="@color/white"
             android:contentDescription="@string/title_search_calories"
             android:src="@drawable/ic_baseline_photo_camera_24"
             app:layout_anchor="@id/bottom_app_bar" />

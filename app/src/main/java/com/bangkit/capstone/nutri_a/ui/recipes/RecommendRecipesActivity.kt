@@ -1,4 +1,4 @@
-package com.bangkit.capstone.nutri_a.ui.home
+package com.bangkit.capstone.nutri_a.ui.recipes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
