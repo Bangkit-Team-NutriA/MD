@@ -96,6 +96,11 @@
     <string name="login_success">Login success</string>
     <string name="login_failed">Login Failed</string>
     <string name="logot_success">Logout Success</string>
+    <string name="upload_warning">Content cannot be empty</string>
+    <string name="upload_failed">Upload Failed</string>
+    <string name="upload_success">Upload Success</string>
+    <string name="failed_load_stories">Failed to load calories</string>
+    <string name="success_load_stories">Success to Load Calories</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
