@@ -94,14 +94,12 @@ class SearchCaloriesActivity : AppCompatActivity() {
 
         if (getFile != null) {
             val file = reduceFileImage(getFile as File)
-
             val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
             val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
-                "photo",
+                "file",
                 file.name,
                 requestImageFile
             )
-
             viewModel.getUser().observe(this) {
                 if (it != null) {
                     val client = ApiConfig.getApiService()
@@ -113,7 +111,8 @@ class SearchCaloriesActivity : AppCompatActivity() {
                         ) {
                             showLoading(false)
                             val responseBody = response.body()
-                            Log.d(TAG, "onResponse: $responseBody")
+                            val name = responseBody?.name;
+                            Log.d(TAG, "onResponseNama: $name")
                             if (response.isSuccessful && responseBody?.status == "success") {
                                 Toast.makeText(
                                     this@SearchCaloriesActivity,

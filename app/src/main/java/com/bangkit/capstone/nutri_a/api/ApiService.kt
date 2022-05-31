@@ -15,7 +15,7 @@ interface ApiService {
         @Field("password") password: String
     ) : Call<LoginResponse>
 
-    @FormUrlEncoded
+    @Multipart
     @POST("predict")
     fun searchCalories(
         @Header("Authorization") header: String,
