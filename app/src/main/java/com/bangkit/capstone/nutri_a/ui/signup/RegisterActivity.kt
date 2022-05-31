@@ -122,7 +122,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun updateLabelDP(calendar: Calendar) {
-        val format = "yyyy-mm-dd"
+        val format = "yyyy-MM-dd"
         val sdf = SimpleDateFormat(format, Locale.UK)
         binding.btnDpBirth.text = sdf.format(calendar.time)
     }
