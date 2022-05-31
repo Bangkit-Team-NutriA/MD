@@ -19,11 +19,13 @@
             android:layout_height="wrap_content"
             android:hint="@string/text_email"
             android:textColorHint="#808080"
+            android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
@@ -37,10 +39,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/text_password"
+            android:inputType="textPassword"
             android:textColorHint="#808080"
             app:layout_constraintTop_toBottomOf="@+id/et_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
@@ -54,10 +58,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="@string/text_full_name"
+            android:inputType="textPersonName"
             android:textColorHint="#808080"
             app:layout_constraintTop_toBottomOf="@+id/et_password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_full_name_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
@@ -73,6 +79,7 @@
             android:drawableStart="@drawable/ic_baseline_calendar_month_24"
             android:text="@string/text_date_of_birth"
             android:textAllCaps="false"
+            android:inputType="date"
             android:textAlignment="textStart"
             android:textColor="@color/crayola"
             android:backgroundTint="@color/white"
@@ -125,12 +132,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="@string/text_weight"
+            android:inputType="numberDecimal"
             android:textColorHint="#808080"
             app:helperText="* in Kilogram (kg)"
             app:helperTextTextColor="@color/crayola"
             app:layout_constraintTop_toBottomOf="@+id/rb_gender">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_weight_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -144,12 +153,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:hint="@string/text_height"
+            android:inputType="numberDecimal"
             android:textColorHint="#808080"
             app:helperText="* in Centimeter (cm)"
             app:helperTextTextColor="@color/crayola"
             app:layout_constraintTop_toBottomOf="@+id/et_weight">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_height_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -164,11 +175,13 @@
             android:layout_marginTop="10dp"
             android:hint="@string/text_exercise_week"
             android:textColorHint="#808080"
+            android:inputType="numberDecimal"
             app:helperText="* Example: 2 times/week"
             app:helperTextTextColor="@color/crayola"
             app:layout_constraintTop_toBottomOf="@+id/et_height">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_exercise_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />

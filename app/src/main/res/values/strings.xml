@@ -101,6 +101,8 @@
     <string name="upload_success">Upload Success</string>
     <string name="failed_load_stories">Failed to load calories</string>
     <string name="success_load_stories">Success to Load Calories</string>
+    <string name="register_success">Registration Success!</string>
+    <string name="register_fail">Registration Failed!</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
