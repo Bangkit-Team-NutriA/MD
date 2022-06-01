@@ -103,6 +103,16 @@
     <string name="success_load_stories">Success to Load Calories</string>
     <string name="register_success">Registration Success!</string>
     <string name="register_fail">Registration Failed!</string>
+    <string name="title_food_recommend">Rekomendasi Makanan Untukmu</string>
+    <string name="text_morning">Pagi</string>
+    <string name="title_nutrition_total">Total Nutrisi</string>
+    <string name="value_calories_total">1500 Kal</string>
+    <string name="value_fat_total">25 gr</string>
+    <string name="value_protein_total">57 gr</string>
+    <string name="value_carbohydrate_total">225 gr</string>
+    <string name="text_other_recommendation">Rekomendasikan Lagi</string>
+    <string name="text_afternoon">Siang</string>
+    <string name="text_night">Malam</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
