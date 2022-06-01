@@ -1,9 +1,10 @@
 package com.bangkit.capstone.nutri_a.ui.search_calories
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -13,6 +14,11 @@ import com.bangkit.capstone.nutri_a.model.InformationCalories
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import com.google.gson.Gson
+import java.io.File
+
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 class ResultCaloriesActivity : AppCompatActivity() {
 
@@ -41,13 +47,25 @@ class ResultCaloriesActivity : AppCompatActivity() {
     }
 
     private fun getCalories() {
-        var informationCalories = InformationCalories()
+        val name = intent.getStringExtra("nameFood")
+        binding.tvName.text = name
+
+        val gson = Gson()
+        val data = gson.fromJson(intent.getStringExtra("dataFood"), InformationCalories::class.java)
+
+        val picture: File? = intent.getSerializableExtra("imageFood") as File?
 
 
-        binding.tvCaloriesValue.text = informationCalories.kalori
-        binding.tvCarbohydrateValue.text = informationCalories.karbohidrat
-        binding.tvProteinValue.text = informationCalories.protein
-        binding.tvFatValue.text = informationCalories.lemak
+        Glide.with(this)
+            .load(picture)
+            .transition(DrawableTransitionOptions.withCrossFade())
+            .into(binding.imgPhoto)
+
+        binding.tvCaloriesValue.text = data.kalori
+        binding.tvCarbohydrateValue.text = data.karbohidrat
+        binding.tvProteinValue.text = data.protein
+        binding.tvFatValue.text = data.lemak
+
 
     }
 

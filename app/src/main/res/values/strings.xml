@@ -22,6 +22,7 @@
     <string name="account_question">Don\'t have an account ?</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gallery">Gallery</string>
@@ -95,7 +96,6 @@
 
     <string name="login_success">Login success</string>
     <string name="login_failed">Login Failed</string>
-    <string name="logot_success">Logout Success</string>
     <string name="upload_warning">Content cannot be empty</string>
     <string name="upload_failed">Upload Failed</string>
     <string name="upload_success">Upload Success</string>
@@ -103,6 +103,9 @@
     <string name="success_load_stories">Success to Load Calories</string>
     <string name="register_success">Registration Success!</string>
     <string name="register_fail">Registration Failed!</string>
+    <string name="cannot_predict_picture">Cannot predict the Picture. Please take another picture</string>
+    <string name="logout_failed">Logout Failed</string>
+    <string name="logout_success">Logout Success</string>
     <string name="title_food_recommend">Rekomendasi Makanan Untukmu</string>
     <string name="text_morning">Pagi</string>
     <string name="title_nutrition_total">Total Nutrisi</string>

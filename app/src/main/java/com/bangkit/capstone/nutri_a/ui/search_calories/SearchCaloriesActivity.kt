@@ -28,6 +28,7 @@ import com.bangkit.capstone.nutri_a.utils.rotateBitmap
 import com.bangkit.capstone.nutri_a.utils.uriToFile
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
+import com.google.gson.Gson
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -44,6 +45,7 @@ class SearchCaloriesActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySearchCaloriesBinding
 
     private lateinit var viewModel: SharedViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -100,6 +102,7 @@ class SearchCaloriesActivity : AppCompatActivity() {
                 file.name,
                 requestImageFile
             )
+
             viewModel.getUser().observe(this) {
                 if (it != null) {
                     val client = ApiConfig.getApiService()
@@ -119,6 +122,25 @@ class SearchCaloriesActivity : AppCompatActivity() {
                                     getString(R.string.upload_success),
                                     Toast.LENGTH_SHORT
                                 ).show()
+
+                                val dataFood = responseBody.informationCalories
+                                val intent = Intent(this@SearchCaloriesActivity, ResultCaloriesActivity::class.java)
+
+                                intent.putExtra("nameFood", name)
+
+                                val gson = Gson()
+                                intent.putExtra("dataFood", gson.toJson(dataFood))
+
+                                intent.putExtra("imageFood", getFile)
+                                startActivity(intent)
+                                finish()
+                            } else if (responseBody?.status == "fail"){
+                                Toast.makeText(
+                                    this@SearchCaloriesActivity,
+                                    getString(R.string.cannot_predict_picture),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
                                 val intent =
                                     Intent(this@SearchCaloriesActivity, ResultCaloriesActivity::class.java)
                                 startActivity(intent)
@@ -203,6 +225,7 @@ class SearchCaloriesActivity : AppCompatActivity() {
                 isBackCamera
             )
             binding.imgPreview.setImageBitmap(result)
+
         }
     }
 

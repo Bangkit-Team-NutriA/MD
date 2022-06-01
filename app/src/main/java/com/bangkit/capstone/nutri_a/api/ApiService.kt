@@ -1,6 +1,7 @@
 package com.bangkit.capstone.nutri_a.api
 
 import com.bangkit.capstone.nutri_a.response.LoginResponse
+import com.bangkit.capstone.nutri_a.response.LogoutResponse
 import com.bangkit.capstone.nutri_a.response.RegisterResponse
 import com.bangkit.capstone.nutri_a.response.SearchCaloriesResponse
 import okhttp3.MultipartBody
@@ -37,5 +38,11 @@ interface ApiService {
         @Field("height") height: Int,
         @Field("timesOfExercise") timesOfExercise: Int
     ) : Call<RegisterResponse>
+
+
+    @DELETE("authentications")
+    fun logout(
+        @Header("Authorization") header: String
+    ) : Call<LogoutResponse>
 
 }
