@@ -36,6 +36,11 @@ interface ApiService {
         @Field("timesOfExercise") timesOfExercise: Int
     ): Call<RegisterResponse>
 
+    @GET("users")
+    fun getUser(
+        @Header("Authorization") header: String
+    ):Call<GetUserResponse>
+
 
     @GET("calculators")
     fun calculateNutrition(
@@ -47,10 +52,25 @@ interface ApiService {
         @Query("age") age: Int
     ): Call<CalculatorResponse>
 
-    @GET("users")
-    fun getUser(
+    @GET("recipes")
+    fun getRecommendRecipes(
+        @Header("Authorization") header: String,
+    ):Call<RecommendRecipesResponse>
+
+    @GET("meals")
+    fun getRecommendParam(
+        @Header("Authorization") header: String,
+        @Query("sex") sex: Boolean,
+        @Query("weight") weight: Int,
+        @Query("height") height: Int,
+        @Query("timesOfExercise") timesOfExercise: Int,
+        @Query("age") age: Int
+    ):Call<RecommendParamResponse>
+
+    @GET("meals")
+    fun getRecommendNonParam(
         @Header("Authorization") header: String
-    ):Call<GetUserResponse>
+    ):Call<RecommendNonParamResponse>
 
     @FormUrlEncoded
     @PUT("users")

@@ -124,6 +124,8 @@
     <string name="edit_profile_success">Success to Edit Profile</string>
     <string name="edit_profile_failed">Failed to Edit Profile</string>
     <string name="success_predict_picture">Success to Predict Picture</string>
+    <string name="success_calculate_food">Success to Calculate Food</string>
+    <string name="failed_calculate_food">Failed to Calculate Food</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">

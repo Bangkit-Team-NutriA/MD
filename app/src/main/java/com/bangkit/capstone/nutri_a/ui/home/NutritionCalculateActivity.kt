@@ -178,7 +178,7 @@ class NutritionCalculateActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val TAG = "Nutrition Calculate Activity"
+        private const val TAG = "NutritionCalculate"
     }
 
 
