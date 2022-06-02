@@ -96,11 +96,6 @@ class SettingsActivity : AppCompatActivity() {
                                 SearchCaloriesActivity.TAG,
                                 "onFailure1: ${response.message()}"
                             )
-                            Toast.makeText(
-                                this@SettingsActivity,
-                                getString(R.string.logout_failed),
-                                Toast.LENGTH_SHORT
-                            ).show()
                         }
                     }
 
@@ -117,6 +112,10 @@ class SettingsActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(

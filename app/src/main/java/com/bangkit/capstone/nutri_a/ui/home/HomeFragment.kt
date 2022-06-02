@@ -23,6 +23,8 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+
+
         binding.calculatorLayout.setOnClickListener {
             val intent = Intent(activity, NutritionCalculateActivity::class.java)
             startActivity(intent)

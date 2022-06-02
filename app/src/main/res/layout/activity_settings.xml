@@ -8,8 +8,9 @@
 
     <LinearLayout
         android:id="@+id/layout_bahasa"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
@@ -36,8 +37,9 @@
 
     <LinearLayout
         android:id="@+id/layout_policy"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
@@ -64,8 +66,9 @@
 
     <LinearLayout
         android:id="@+id/layout_faq"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
@@ -92,8 +95,9 @@
 
     <LinearLayout
         android:id="@+id/layout_about"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"
@@ -121,8 +125,9 @@
 
     <LinearLayout
         android:id="@+id/layout_logout"
-        android:layout_width="325dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_edit_text"
         android:orientation="horizontal"

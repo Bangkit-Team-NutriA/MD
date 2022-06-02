@@ -33,4 +33,5 @@ data class DataUser(
 
 	@field:SerializedName("tanggallahir")
 	val tanggallahir: String? = null
+
 ) : Parcelable

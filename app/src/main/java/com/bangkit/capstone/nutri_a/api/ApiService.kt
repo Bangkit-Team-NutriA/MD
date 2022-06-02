@@ -52,8 +52,15 @@ interface ApiService {
         @Header("Authorization") header: String
     ):Call<GetUserResponse>
 
-
-
+    @FormUrlEncoded
+    @PUT("users")
+    fun editUser(
+        @Header("Authorization") header: String,
+        @Field("name") name: String,
+        @Field("sex") sex: Boolean,
+        @Field("weight") weight: Int,
+        @Field("height") height: Int,
+    ):Call<EditUserResponse>
 
     @DELETE("authentications")
     fun logout(

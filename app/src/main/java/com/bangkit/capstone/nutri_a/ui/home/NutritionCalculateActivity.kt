@@ -44,9 +44,18 @@ class NutritionCalculateActivity : AppCompatActivity() {
         binding = ActivityNutritionCalculateBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupViewModel()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         actionBar?.title = "Kalkulator Nutrisi"
+
+
+        setupViewModel()
+
+        binding.etAge.addTextChangedListener(calculate)
+        binding.etHeight.addTextChangedListener(calculate)
+        binding.etWeight.addTextChangedListener(calculate)
+        binding.etExercise.addTextChangedListener(calculate)
+
 
         binding.btnCalculate.setOnClickListener {
             var sex = true
@@ -139,6 +148,25 @@ class NutritionCalculateActivity : AppCompatActivity() {
                 })
             }
         }
+    }
+
+    private val calculate: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            val age: String = binding.etAge.text.toString().trim()
+            val weight: String = binding.etWeight.text.toString().trim()
+            val height: String = binding.etHeight.text.toString().trim()
+            val exercise: String = binding.etExercise.text.toString().trim()
+
+            binding.btnCalculate.isEnabled = age.isNotEmpty() && weight.isNotEmpty() && height.isNotEmpty() && exercise.isNotEmpty()
+        }
+
+        override fun afterTextChanged(s: Editable) {}
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun showLoading(isLoading: Boolean) {

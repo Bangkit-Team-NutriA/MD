@@ -123,6 +123,12 @@ class SearchCaloriesActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
 
+                                Toast.makeText(
+                                    this@SearchCaloriesActivity,
+                                    getString(R.string.success_predict_picture),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
                                 val dataFood = responseBody.informationCalories
                                 val intent = Intent(this@SearchCaloriesActivity, ResultCaloriesActivity::class.java)
 

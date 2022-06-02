@@ -1,34 +1,32 @@
 package com.bangkit.capstone.nutri_a.ui.home
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.api.ApiConfig
-import com.bangkit.capstone.nutri_a.ui.search_calories.SearchCaloriesActivity
 import com.bangkit.capstone.nutri_a.databinding.ActivityHomeBinding
-import com.bangkit.capstone.nutri_a.response.CalculatorResponse
 import com.bangkit.capstone.nutri_a.response.GetUserResponse
 import com.bangkit.capstone.nutri_a.ui.profile.ProfileFragment
-import com.bangkit.capstone.nutri_a.ui.search_calories.ResultCaloriesActivity
+import com.bangkit.capstone.nutri_a.ui.search_calories.SearchCaloriesActivity
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -51,7 +49,6 @@ class HomeActivity : AppCompatActivity() {
         setupViewModel()
 
         binding.bottomNavigationView.menu.getItem(1).isEnabled = false
-
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
@@ -64,6 +61,9 @@ class HomeActivity : AppCompatActivity() {
         }
 
         getUser()
+
+
+
     }
 
     private fun setupViewModel() {
@@ -91,32 +91,24 @@ class HomeActivity : AppCompatActivity() {
                                 getString(R.string.success_get_data_user),
                                 Toast.LENGTH_SHORT
                             ).show()
-                            val intent = Intent(
-                                this@HomeActivity,
-                                ProfileFragment::class.java
-                            )
 
                             val data = responseBody.data
 
                             val name = data?.nama.toString()
-                            val sexBoolean = data?.jeniskelamin
-                            val height = data?.tinggi.toString()
-                            val weight = data?.berat.toString()
+                            val genderBoolean = data?.jeniskelamin
+                            val heightInput = data?.tinggi.toString()
+                            val weightInput = data?.berat.toString()
 
-                            var sex = ""
-                            if (sexBoolean == true) {
-                                sex = "Pria"
-                            } else if (sexBoolean == false) {
-                                sex = "Wanita"
+                            var gender = ""
+                            if (genderBoolean == true) {
+                                gender = "Pria"
+                            } else if (genderBoolean == false) {
+                                gender = "Wanita"
                             }
 
-                            intent.putExtra("dataName", name)
-                            intent.putExtra("dataSex", sex)
-                            intent.putExtra("dataWeight", weight)
-                            intent.putExtra("dataHeight", height)
 
                             Toast.makeText(
-                                this@HomeActivity, "$sex",
+                                this@HomeActivity, "$gender",
                                 Toast.LENGTH_SHORT
                             ).show()
 

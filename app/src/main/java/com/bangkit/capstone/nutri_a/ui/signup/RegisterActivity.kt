@@ -3,6 +3,8 @@ package com.bangkit.capstone.nutri_a.ui.signup
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.DatePicker
@@ -49,6 +51,15 @@ class RegisterActivity : AppCompatActivity() {
                 calendar.get(Calendar.DAY_OF_MONTH)).show()
         }
 
+        binding.etEmailValue.addTextChangedListener(register)
+        binding.etPasswordValue.addTextChangedListener(register)
+        binding.etFullNameValue.addTextChangedListener(register)
+        binding.btnDpBirth.addTextChangedListener(register)
+        binding.etHeightValue.addTextChangedListener(register)
+        binding.etWeightValue.addTextChangedListener(register)
+        binding.etExerciseValue.addTextChangedListener(register)
+
+
         binding.btnRegister.setOnClickListener {
             val inputName = binding.etFullNameValue.text.toString()
             val inputEmail = binding.etEmailValue.text.toString()
@@ -79,6 +90,23 @@ class RegisterActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    private val register: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            val name: String = binding.etFullNameValue.text.toString().trim()
+            val email: String = binding.etEmailValue.text.toString().trim()
+            val password: String = binding.etPasswordValue.text.toString().trim()
+            val birthOfDate: String = binding.btnDpBirth.text.toString().trim()
+            val weight: String = binding.etWeightValue.text.toString().trim()
+            val height: String = binding.etHeightValue.text.toString().trim()
+            val exercise: String = binding.etExerciseValue.text.toString().trim()
+
+            binding.btnRegister.isEnabled = name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && birthOfDate.isNotEmpty() && weight.isNotEmpty() && height.isNotEmpty() && exercise.isNotEmpty()
+        }
+
+        override fun afterTextChanged(s: Editable) {}
     }
 
     private fun createAccount(email: String, password: String, name: String, birtOfDate: String, gender: Boolean, weight: Int, height: Int, timesOfExercise: Int) {
@@ -130,7 +158,7 @@ class RegisterActivity : AppCompatActivity() {
 
 
     companion object {
-        private const val TAG = "Register Activity"
+        private const val TAG = "RegisterActivity"
     }
 
 }

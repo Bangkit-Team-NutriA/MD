@@ -121,6 +121,9 @@
     <string name="calculate_failed">Failed to Calculate Nutrition</string>
     <string name="failed_get_data_user">Failed to Get Data User</string>
     <string name="success_get_data_user">Success to Get Data User</string>
+    <string name="edit_profile_success">Success to Edit Profile</string>
+    <string name="edit_profile_failed">Failed to Edit Profile</string>
+    <string name="success_predict_picture">Success to Predict Picture</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
