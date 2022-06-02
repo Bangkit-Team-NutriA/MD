@@ -89,7 +89,7 @@
     <string name="text_gender">Gender</string>
     <string name="text_workout_week">Workout / Week</string>
     <string name="text_recommend_food">Rekomendasi Makanan Saya</string>
-    <string name="text_use_mydata">Gunakan Data Saya</string>
+    <string name="text_use_my_data">Gunakan Data Saya</string>
     <string name="text_detail">Detail</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -116,6 +116,11 @@
     <string name="text_other_recommendation">Rekomendasikan Lagi</string>
     <string name="text_afternoon">Siang</string>
     <string name="text_night">Malam</string>
+    <string name="text_sex">Sex</string>
+    <string name="calculate_success">Success Calculate Nutrition</string>
+    <string name="calculate_failed">Failed to Calculate Nutrition</string>
+    <string name="failed_get_data_user">Failed to Get Data User</string>
+    <string name="success_get_data_user">Success to Get Data User</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">

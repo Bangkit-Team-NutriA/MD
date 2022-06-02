@@ -1,9 +1,6 @@
 package com.bangkit.capstone.nutri_a.api
 
-import com.bangkit.capstone.nutri_a.response.LoginResponse
-import com.bangkit.capstone.nutri_a.response.LogoutResponse
-import com.bangkit.capstone.nutri_a.response.RegisterResponse
-import com.bangkit.capstone.nutri_a.response.SearchCaloriesResponse
+import com.bangkit.capstone.nutri_a.response.*
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.*
@@ -16,14 +13,14 @@ interface ApiService {
     fun login(
         @Field("email") email: String,
         @Field("password") password: String
-    ) : Call<LoginResponse>
+    ): Call<LoginResponse>
 
     @Multipart
     @POST("predict")
     fun searchCalories(
         @Header("Authorization") header: String,
         @Part file: MultipartBody.Part,
-    ) : Call<SearchCaloriesResponse>
+    ): Call<SearchCaloriesResponse>
 
 
     @FormUrlEncoded
@@ -37,12 +34,31 @@ interface ApiService {
         @Field("weight") weight: Int,
         @Field("height") height: Int,
         @Field("timesOfExercise") timesOfExercise: Int
-    ) : Call<RegisterResponse>
+    ): Call<RegisterResponse>
+
+
+    @GET("calculators")
+    fun calculateNutrition(
+        @Header("Authorization") header: String,
+        @Query("sex") sex: Boolean,
+        @Query("weight") weight: Int,
+        @Query("height") height: Int,
+        @Query("timesOfExercise") timesOfExercise: Int,
+        @Query("age") age: Int
+    ): Call<CalculatorResponse>
+
+    @GET("users")
+    fun getUser(
+        @Header("Authorization") header: String
+    ):Call<GetUserResponse>
+
+
 
 
     @DELETE("authentications")
     fun logout(
         @Header("Authorization") header: String
-    ) : Call<LogoutResponse>
+    ): Call<LogoutResponse>
+
 
 }

@@ -1,6 +1,5 @@
 package com.bangkit.capstone.nutri_a.response
 
-import com.bangkit.capstone.nutri_a.model.InformationCalories
 import com.google.gson.annotations.SerializedName
 
 class SearchCaloriesResponse {
@@ -12,4 +11,21 @@ class SearchCaloriesResponse {
 
     @SerializedName("status")
     val status: String? = null
+}
+
+class InformationCalories {
+    @SerializedName("kalori")
+    val kalori: String? = null
+
+    @SerializedName("karbohidrat")
+    val karbohidrat: String? = null
+
+    @SerializedName("protein")
+    val protein: String? = null
+
+    @SerializedName("serving")
+    val serving: String? = null
+
+    @SerializedName("lemak")
+    val lemak: String? = null
 }

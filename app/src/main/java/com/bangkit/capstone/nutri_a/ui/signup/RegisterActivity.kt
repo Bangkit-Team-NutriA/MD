@@ -25,7 +25,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
 
     private var male = R.string.male.toString()
-    private var female = R.string.male.toString()
+    private var female = R.string.female.toString()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -112,6 +112,7 @@ class RegisterActivity : AppCompatActivity() {
 
         })
     }
+
 
     private fun showLoading(isLoading: Boolean) {
         if (isLoading) {

@@ -1,9 +1,14 @@
 package com.bangkit.capstone.nutri_a.ui.home
 
+import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -12,12 +17,21 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.bangkit.capstone.nutri_a.R
+import com.bangkit.capstone.nutri_a.api.ApiConfig
 import com.bangkit.capstone.nutri_a.ui.search_calories.SearchCaloriesActivity
 import com.bangkit.capstone.nutri_a.databinding.ActivityHomeBinding
+import com.bangkit.capstone.nutri_a.response.CalculatorResponse
+import com.bangkit.capstone.nutri_a.response.GetUserResponse
+import com.bangkit.capstone.nutri_a.ui.profile.ProfileFragment
+import com.bangkit.capstone.nutri_a.ui.search_calories.ResultCaloriesActivity
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.gson.Gson
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -38,7 +52,8 @@ class HomeActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.menu.getItem(1).isEnabled = false
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
         setupWithNavController(bottomNavigationView, navController)
@@ -47,6 +62,8 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, SearchCaloriesActivity::class.java)
             startActivity(intent)
         }
+
+        getUser()
     }
 
     private fun setupViewModel() {
@@ -54,5 +71,82 @@ class HomeActivity : AppCompatActivity() {
             this,
             ViewModelFactory(UserPreference.getInstance(dataStore))
         )[SharedViewModel::class.java]
+    }
+
+    private fun getUser() {
+        viewModel.getUser().observe(this) {
+            if (it != null) {
+                val client = ApiConfig.getApiService().getUser("Bearer " + it.token)
+                client.enqueue(object : Callback<GetUserResponse> {
+                    @SuppressLint("LongLogTag")
+                    override fun onResponse(
+                        call: Call<GetUserResponse>,
+                        response: Response<GetUserResponse>
+                    ) {
+                        val responseBody = response.body()
+                        Log.d(TAG, "onResponse: $responseBody")
+                        if (response.isSuccessful && responseBody?.status == "success") {
+                            Toast.makeText(
+                                this@HomeActivity,
+                                getString(R.string.success_get_data_user),
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            val intent = Intent(
+                                this@HomeActivity,
+                                ProfileFragment::class.java
+                            )
+
+                            val data = responseBody.data
+
+                            val name = data?.nama.toString()
+                            val sexBoolean = data?.jeniskelamin
+                            val height = data?.tinggi.toString()
+                            val weight = data?.berat.toString()
+
+                            var sex = ""
+                            if (sexBoolean == true) {
+                                sex = "Pria"
+                            } else if (sexBoolean == false) {
+                                sex = "Wanita"
+                            }
+
+                            intent.putExtra("dataName", name)
+                            intent.putExtra("dataSex", sex)
+                            intent.putExtra("dataWeight", weight)
+                            intent.putExtra("dataHeight", height)
+
+                            Toast.makeText(
+                                this@HomeActivity, "$sex",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        } else {
+                            Log.e(TAG, "onFailure1: ${response.message()}")
+                            Toast.makeText(
+                                this@HomeActivity,
+                                getString(R.string.failed_get_data_user),
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+
+                    @SuppressLint("LongLogTag")
+                    override fun onFailure(call: Call<GetUserResponse>, t: Throwable) {
+                        Log.e(TAG, "onFailure2: ${t.message}")
+                        Toast.makeText(
+                            this@HomeActivity,
+                            getString(R.string.failed_get_data_user),
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+
+                })
+            }
+        }
+    }
+
+    companion object {
+
+        const val TAG = "SearchCaloriesActivity"
     }
 }

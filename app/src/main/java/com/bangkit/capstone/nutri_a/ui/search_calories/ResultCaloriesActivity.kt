@@ -1,7 +1,6 @@
 package com.bangkit.capstone.nutri_a.ui.search_calories
 
 import android.content.Context
-import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +9,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.bangkit.capstone.nutri_a.databinding.ActivityResultCaloriesBinding
-import com.bangkit.capstone.nutri_a.model.InformationCalories
+import com.bangkit.capstone.nutri_a.response.InformationCalories
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory

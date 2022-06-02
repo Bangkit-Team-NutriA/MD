@@ -8,13 +8,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="100dp">
 
         <LinearLayout
             android:id="@+id/inputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="42dp"
+            android:layout_marginHorizontal="24dp"
             android:orientation="vertical"
             android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,26 +24,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tinggi Badan"
+                android:text="@string/text_weight"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"/>
 
-            <EditText
-                android:id="@+id/et_height"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_edit_text"
-                android:ems="10"
-                android:paddingTop="9dp"
-                android:inputType="text"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Berat Badan"
-                android:textSize="14sp"
-                android:textColor="@color/crayola"
-                android:layout_marginTop="14sp"/>
             <EditText
                 android:id="@+id/et_weight"
                 android:layout_width="match_parent"
@@ -51,12 +35,28 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:paddingTop="9dp"
-                android:inputType="text"/>
+                android:inputType="numberDecimal"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Umur"
+                android:text="@string/text_height"
+                android:textSize="14sp"
+                android:textColor="@color/crayola"
+                android:layout_marginTop="14sp"/>
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_text"
+                android:ems="10"
+                android:paddingTop="9dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_age"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"
                 android:layout_marginTop="14sp"/>
@@ -67,13 +67,13 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:paddingTop="9dp"
-                android:inputType="text"/>
+                android:inputType="numberDecimal"/>
 
             <TextView
                 android:id="@+id/tv_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jenis Kelamin"
+                android:text="@string/text_sex"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"
                 android:layout_marginTop="14sp"/>
@@ -107,7 +107,7 @@
                 android:id="@+id/tv_exercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Olahraga / Minggu"
+                android:text="@string/text_exercise_week"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"
                 android:layout_marginTop="14sp"/>
@@ -118,7 +118,7 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:paddingTop="9dp"
-                android:inputType="text"/>
+                android:inputType="numberDecimal"/>
         </LinearLayout>
 
         <Button
@@ -126,22 +126,24 @@
             style="@style/Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="42dp"
+            android:layout_marginHorizontal="24dp"
             android:layout_marginTop="32dp"
-            android:text="Calculate Your Calories"
+            android:text="Calculate Your Nutrition"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputLayout" />
+
         <LinearLayout
             android:id="@+id/nutrition_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="28dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/bg_edit_text"
             android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_calculate">
@@ -257,6 +259,20 @@
             </RelativeLayout>
 
         </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:indeterminateTint="@color/crayola"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
