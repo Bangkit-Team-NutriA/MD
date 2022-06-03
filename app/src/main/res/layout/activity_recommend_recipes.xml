@@ -7,7 +7,7 @@
     tools:context=".ui.recipes.RecommendRecipesActivity">
 
     <LinearLayout
-        android:id="@+id/ingredientsLayout"
+        android:id="@+id/ingredientsLayout_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -25,14 +25,13 @@
             android:textStyle="bold" />
 
         <RelativeLayout
-            android:id="@+id/chooseIngredientsLayout"
             android:layout_width="325dp"
             android:layout_height="65dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/bg_edit_text">
 
             <Spinner
-                android:id="@+id/inputIngredients"
+                android:id="@+id/inputIngredients_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true" />
@@ -40,16 +39,137 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_addIngredients"
+    <LinearLayout
+        android:id="@+id/ingredientsLayout_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:text="@string/text_add_other_ingredients"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/ingredientsLayout"
-        app:layout_constraintTop_toBottomOf="@+id/ingredientsLayout" />
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsLayout_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ingredients_2"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edit_text">
+
+            <Spinner
+                android:id="@+id/inputIngredients_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ingredientsLayout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsLayout_2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ingredients_3"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edit_text">
+
+            <Spinner
+                android:id="@+id/inputIngredients_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ingredientsLayout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsLayout_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ingredients_4"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edit_text">
+
+            <Spinner
+                android:id="@+id/inputIngredients_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ingredientsLayout_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsLayout_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ingredients_5"
+            android:textColor="@color/crayola"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edit_text">
+
+            <Spinner
+                android:id="@+id/inputIngredients_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_search"
