@@ -35,8 +35,8 @@ class RecommendFoodActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecommendFoodBinding
     private lateinit var viewModel: SharedViewModel
 
-    private var male = R.string.male.toString()
-    private var female = R.string.female.toString()
+    private var male = "Male"
+    private var female = "Female"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

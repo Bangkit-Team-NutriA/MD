@@ -26,8 +26,8 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
 
-    private var male = R.string.male.toString()
-    private var female = R.string.female.toString()
+    private var male = "Male"
+    private var female = "Female"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,13 +71,11 @@ class RegisterActivity : AppCompatActivity() {
             val selectedId: Int = binding.rbGender.checkedRadioButtonId
             val radioButton = findViewById<View>(selectedId) as RadioButton
             val selectedRB = radioButton.text.toString()
-
             if (selectedRB == male) {
                 inputGender = true
             } else if (selectedRB == female) {
                 inputGender = false
             }
-
             val weight = binding.etWeightValue.text.toString()
             val inputWeight = weight.toInt()
             val height = binding.etHeightValue.text.toString()

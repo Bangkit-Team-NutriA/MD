@@ -44,8 +44,8 @@ class EditProfileActivity : AppCompatActivity() {
 
     private lateinit var viewModel: SharedViewModel
 
-    private var male = R.string.male.toString()
-    private var female = R.string.female.toString()
+    private var male = "Male"
+    private var female = "Female"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
