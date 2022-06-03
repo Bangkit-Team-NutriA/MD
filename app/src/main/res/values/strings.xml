@@ -129,13 +129,266 @@
     <string name="email_not_registered">Email is not registered</string>
     <string name="wrong_password">Wrong Password</string>
     <string name="try_again">Try Again</string>
+    <string name="text_ingredients_2">Bahan 2</string>
+    <string name="text_ingredients_3">Bahan 3</string>
+    <string name="text_ingredients_4">Bahan 4</string>
+    <string name="text_ingredients_5">Bahan 5</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
-        <item>Bawang Merah</item>
-        <item>Bawang Putih</item>
-        <item>Kunyit</item>
-        <item>Lada</item>
+        <item>agar agar powder</item>
+        <item>agarasa coklat</item>
+        <item>air</item>
+        <item>air kelapa</item>
+        <item>alpukat</item>
+        <item>anggur</item>
+        <item>apel</item>
+        <item>ayam</item>
+        <item>baking soda</item>
+        <item>bakso ikan</item>
+        <item>bakso sapi</item>
+        <item>bakso udang</item>
+        <item>bawang bombay</item>
+        <item>bawang merah</item>
+        <item>bawang putih</item>
+        <item>bawang putih bubuk</item>
+        <item>bayam</item>
+        <item>bihun</item>
+        <item>bihun jagung</item>
+        <item>biji bunga matahari kering</item>
+        <item>biji ketumbar</item>
+        <item>biji wijen</item>
+        <item>biji wijen kering</item>
+        <item>blewah</item>
+        <item>blueberry yoghurt</item>
+        <item>brokoli</item>
+        <item>buah</item>
+        <item>buah naga</item>
+        <item>buah pir</item>
+        <item>bubuk cabai</item>
+        <item>bubuk kari</item>
+        <item>bubuk leci</item>
+        <item>bumbu indomie goreng</item>
+        <item>bumbu racik ayam goreng</item>
+        <item>bumbu racik nasi goreng</item>
+        <item>bumbu racik sayur sop</item>
+        <item>bumbu sesame</item>
+        <item>buncis</item>
+        <item>cabai</item>
+        <item>chia seed</item>
+        <item>chicken nugget</item>
+        <item>coklat</item>
+        <item>coklat bubuk</item>
+        <item>coklat gelap</item>
+        <item>cornflakes</item>
+        <item>crab stick</item>
+        <item>cranberry</item>
+        <item>dada ayam</item>
+        <item>daging ayam</item>
+        <item>daging babi</item>
+        <item>daging sapi</item>
+        <item>daun bawang</item>
+        <item>daun pepaya</item>
+        <item>fenugreek seed</item>
+        <item>fiber creme</item>
+        <item>fish roll</item>
+        <item>gandum</item>
+        <item>garam</item>
+        <item>garam laut</item>
+        <item>gochujang</item>
+        <item>granola</item>
+        <item>green snap beans</item>
+        <item>gula</item>
+        <item>gula bubuk</item>
+        <item>gula coklat</item>
+        <item>gula jawa</item>
+        <item>gula merah</item>
+        <item>gula pasir</item>
+        <item>ice cream</item>
+        <item>iga sapi</item>
+        <item>ikan</item>
+        <item>ikan bandeng</item>
+        <item>ikan bawal</item>
+        <item>ikan tuna</item>
+        <item>instant oatmeal</item>
+        <item>jagung</item>
+        <item>jagung kecil</item>
+        <item>jahe</item>
+        <item>jamur</item>
+        <item>jamur enoki</item>
+        <item>jamur kancing</item>
+        <item>jamur kuping</item>
+        <item>jamur putih</item>
+        <item>jamur tiram</item>
+        <item>jelly powder anggur</item>
+        <item>jeruk keprok</item>
+        <item>jeruk nipis</item>
+        <item>jinten</item>
+        <item>kacang</item>
+        <item>kacang almond</item>
+        <item>kacang kemiri</item>
+        <item>kacang panjang</item>
+        <item>kacang sangrai kering</item>
+        <item>kacang tanah</item>
+        <item>kaldu ayam</item>
+        <item>kaldu jamur</item>
+        <item>kangkung</item>
+        <item>kayu manis</item>
+        <item>kecambah</item>
+        <item>kecap asin</item>
+        <item>kecap inggris</item>
+        <item>kecap manis</item>
+        <item>kecap pedas</item>
+        <item>keju</item>
+        <item>keju mozarella</item>
+        <item>kelapa</item>
+        <item>kembang kol</item>
+        <item>kembang tahu</item>
+        <item>kenari</item>
+        <item>kencur</item>
+        <item>kental manis</item>
+        <item>kentang</item>
+        <item>kentang rebus</item>
+        <item>kepiting</item>
+        <item>kertas nasi</item>
+        <item>kerupuk seblak</item>
+        <item>ketumbar</item>
+        <item>kismis</item>
+        <item>kiwi</item>
+        <item>kornet</item>
+        <item>kubis</item>
+        <item>kulit ayam</item>
+        <item>kulit pangsit</item>
+        <item>kunyit</item>
+        <item>kurma</item>
+        <item>kwetiau</item>
+        <item>labu</item>
+        <item>lada hitam</item>
+        <item>lada putih bubuk</item>
+        <item>lengkeng</item>
+        <item>lengkuas</item>
+        <item>low fat high calcium French vanilla</item>
+        <item>madu</item>
+        <item>makaroni</item>
+        <item>mangga</item>
+        <item>margarin</item>
+        <item>marshmallow</item>
+        <item>mayones</item>
+        <item>mentega</item>
+        <item>mentimun</item>
+        <item>mi</item>
+        <item>mie basah</item>
+        <item>minyak goreng</item>
+        <item>minyak jagung</item>
+        <item>minyak kanola</item>
+        <item>minyak kelapa</item>
+        <item>minyak nabati</item>
+        <item>minyak sayur canola</item>
+        <item>minyak sesame</item>
+        <item>minyak wijen</item>
+        <item>minyak zaitun</item>
+        <item>msg</item>
+        <item>nanas</item>
+        <item>nasi</item>
+        <item>nasi merah</item>
+        <item>oat</item>
+        <item>olive oil</item>
+        <item>oregano</item>
+        <item>paha ayam</item>
+        <item>pakcoy</item>
+        <item>pangsit</item>
+        <item>paprika</item>
+        <item>paprika hijau</item>
+        <item>paprika kuning</item>
+        <item>paprika merah manis</item>
+        <item>pati jagung</item>
+        <item>pepaya</item>
+        <item>pilus sapi panggang</item>
+        <item>pir</item>
+        <item>pisang</item>
+        <item>putih telur</item>
+        <item>puyuh</item>
+        <item>ragi</item>
+        <item>rolled oat</item>
+        <item>roti gandum</item>
+        <item>roti tawar</item>
+        <item>royco ayam</item>
+        <item>royco kaldu rasa sapi</item>
+        <item>royco sapi</item>
+        <item>rumput laut kering</item>
+        <item>rumput laut panggang</item>
+        <item>sagu</item>
+        <item>sambal</item>
+        <item>sambal goreng</item>
+        <item>sambal matah</item>
+        <item>saos tiram</item>
+        <item>sarden saus tomat</item>
+        <item>saus cokelat</item>
+        <item>saus manis coklat pisang</item>
+        <item>saus sambal</item>
+        <item>saus spageti</item>
+        <item>saus teriyaki</item>
+        <item>saus tiram</item>
+        <item>saus tomat</item>
+        <item>saus topoki</item>
+        <item>saus wijen</item>
+        <item>sawi</item>
+        <item>sawi hijau</item>
+        <item>sawi putih</item>
+        <item>sayur campuran</item>
+        <item>scallop</item>
+        <item>selada</item>
+        <item>selada air</item>
+        <item>selada daun hijau</item>
+        <item>selada kol</item>
+        <item>selai kacang</item>
+        <item>seledri</item>
+        <item>semangka</item>
+        <item>sereh</item>
+        <item>sesame oil</item>
+        <item>shin ramyun</item>
+        <item>singles</item>
+        <item>sodium</item>
+        <item>sohun</item>
+        <item>sosis ayam</item>
+        <item>sosis bratwurst</item>
+        <item>sosis sapi</item>
+        <item>spageti gandum</item>
+        <item>spaghetti</item>
+        <item>stroberi</item>
+        <item>sun kara</item>
+        <item>susu</item>
+        <item>susu alomnd</item>
+        <item>susu bubuk full cream</item>
+        <item>susu coklat</item>
+        <item>susu low fat</item>
+        <item>susu skim</item>
+        <item>susu uht full cream</item>
+        <item>sweetener</item>
+        <item>tahu</item>
+        <item>tape singkong</item>
+        <item>telur</item>
+        <item>telur puyuh</item>
+        <item>tempe</item>
+        <item>tepung</item>
+        <item>tepung beras</item>
+        <item>tepung gandum</item>
+        <item>tepung maizena</item>
+        <item>tepung pati jagung</item>
+        <item>tepung sagu</item>
+        <item>tepung tapioka</item>
+        <item>tepung terigu</item>
+        <item>terasi</item>
+        <item>tofu telur</item>
+        <item>tomat</item>
+        <item>tongseng</item>
+        <item>ubi</item>
+        <item>ubi ungu</item>
+        <item>udang</item>
+        <item>vanila</item>
+        <item>white coffee less sugar</item>
+        <item>wortel</item>
+        <item>yogurt</item>
     </string-array>
 
 

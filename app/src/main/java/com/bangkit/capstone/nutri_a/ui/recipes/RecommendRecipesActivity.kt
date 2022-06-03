@@ -52,7 +52,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
 
 
 
-        val spinner: Spinner = findViewById(R.id.inputIngredients)
+        val spinner1: Spinner = findViewById(R.id.inputIngredients_1)
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter.createFromResource(
             this,
@@ -62,7 +62,59 @@ class RecommendRecipesActivity : AppCompatActivity() {
             // Specify the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
-            spinner.adapter = adapter
+            spinner1.adapter = adapter
+        }
+
+        val spinner2: Spinner = findViewById(R.id.inputIngredients_2)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.input_ingredients,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner2.adapter = adapter
+        }
+
+        val spinner3: Spinner = findViewById(R.id.inputIngredients_3)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.input_ingredients,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner3.adapter = adapter
+        }
+
+        val spinner4: Spinner = findViewById(R.id.inputIngredients_4)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.input_ingredients,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner4.adapter = adapter
+        }
+
+        val spinner5: Spinner = findViewById(R.id.inputIngredients_5)
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.input_ingredients,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            spinner5.adapter = adapter
         }
 
         val ingredient: List<Int> = listOf(0, 2, 3, 4, 5)
