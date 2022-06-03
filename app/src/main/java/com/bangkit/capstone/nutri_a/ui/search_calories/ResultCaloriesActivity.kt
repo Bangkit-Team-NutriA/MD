@@ -69,13 +69,6 @@ class ResultCaloriesActivity : AppCompatActivity() {
     }
 
 
-    private fun showLoading(isLoading: Boolean) {
-        if (isLoading) {
-            binding.progressBar.visibility = View.VISIBLE
-        } else {
-            binding.progressBar.visibility = View.GONE
-        }
-    }
 
     companion object {
         private const val TAG = "ResultSearchCaloriesActivity"

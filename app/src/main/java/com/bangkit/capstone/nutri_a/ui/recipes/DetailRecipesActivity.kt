@@ -14,4 +14,8 @@ class DetailRecipesActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
+
+    companion object {
+        const val TAG = "DetailRecipes"
+    }
 }

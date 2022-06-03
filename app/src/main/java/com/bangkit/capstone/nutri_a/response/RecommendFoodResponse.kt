@@ -2,29 +2,28 @@ package com.bangkit.capstone.nutri_a.response
 
 import com.google.gson.annotations.SerializedName
 
-data class RecommendNonParamResponse(
+data class RecommendFoodResponse(
 
 	@field:SerializedName("information")
-	val information: InformationNonParam? = null,
+	val information: InformationParam? = null,
 
 	@field:SerializedName("status")
 	val status: String? = null
 )
 
-
-data class InformationNonParam(
+data class InformationParam(
 
 	@field:SerializedName("siang")
-	val siang: List<SiangItemNonParam?>? = null,
+	val siang: List<SiangItemParam?>? = null,
 
 	@field:SerializedName("pagi")
-	val pagi: List<PagiItemNonParam?>? = null,
+	val pagi: List<PagiItemParam?>? = null,
 
 	@field:SerializedName("malam")
-	val malam: List<MalamItemNonParam?>? = null
+	val malam: List<MalamItemParam?>? = null
 )
 
-data class PagiItemNonParam(
+data class MalamItemParam(
 
 	@field:SerializedName("Nama")
 	val nama: String? = null,
@@ -42,7 +41,7 @@ data class PagiItemNonParam(
 	val proteinProtein: String? = null
 )
 
-data class SiangItemNonParam(
+data class SiangItemParam(
 
 	@field:SerializedName("Nama")
 	val nama: String? = null,
@@ -60,7 +59,7 @@ data class SiangItemNonParam(
 	val proteinProtein: String? = null
 )
 
-data class MalamItemNonParam(
+data class PagiItemParam(
 
 	@field:SerializedName("Nama")
 	val nama: String? = null,

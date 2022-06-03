@@ -140,34 +140,23 @@ class SearchCaloriesActivity : AppCompatActivity() {
                                 intent.putExtra("imageFood", getFile)
                                 startActivity(intent)
                                 finish()
-                            } else if (responseBody?.status == "fail"){
+                            } else {
+                                Log.e(TAG, "onFailure1: ${response.message()}")
                                 Toast.makeText(
                                     this@SearchCaloriesActivity,
                                     getString(R.string.cannot_predict_picture),
                                     Toast.LENGTH_SHORT
                                 ).show()
-
                                 val intent =
-                                    Intent(this@SearchCaloriesActivity, ResultCaloriesActivity::class.java)
+                                    Intent(this@SearchCaloriesActivity, SearchCaloriesActivity::class.java)
                                 startActivity(intent)
-                            } else {
-                                Log.e(TAG, "onFailure1: ${response.message()}")
-                                Toast.makeText(
-                                    this@SearchCaloriesActivity,
-                                    getString(R.string.upload_failed),
-                                    Toast.LENGTH_SHORT
-                                ).show()
+                                finish()
                             }
                         }
 
                         override fun onFailure(call: Call<SearchCaloriesResponse>, t: Throwable) {
                             showLoading(false)
                             Log.e(TAG, "onFailure2: ${t.message}")
-                            Toast.makeText(
-                                this@SearchCaloriesActivity,
-                                getString(R.string.upload_failed),
-                                Toast.LENGTH_SHORT
-                            ).show()
                         }
                     })
                 }

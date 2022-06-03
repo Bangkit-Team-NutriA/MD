@@ -1,7 +1,7 @@
 package com.bangkit.capstone.nutri_a.utils
 
 import androidx.datastore.core.DataStore
-import com.bangkit.capstone.nutri_a.model.User
+import com.bangkit.capstone.nutri_a.model.Auth
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import androidx.datastore.preferences.core.Preferences
@@ -11,19 +11,19 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 
 class UserPreference private constructor(private val dataStore: DataStore<Preferences>) {
 
-    fun getUser() : Flow<User> {
+    fun getUser() : Flow<Auth> {
         return dataStore.data.map {preferences ->
-            User(
+            Auth(
                 preferences[TOKEN_KEY] ?:"",
                 preferences[STATE_KEY] ?: false
             )
         }
     }
 
-    suspend fun saveUser(user: User) {
+    suspend fun saveUser(auth: Auth) {
         dataStore.edit {preferences ->
-            preferences[TOKEN_KEY] = user.token
-            preferences[STATE_KEY] = user.isLogin
+            preferences[TOKEN_KEY] = auth.token
+            preferences[STATE_KEY] = auth.isLogin
         }
     }
 

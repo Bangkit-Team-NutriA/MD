@@ -74,7 +74,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:paddingHorizontal="5dp"
-                    android:text="@string/male" />
+                    android:text="@string/male"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/radio_woman"

@@ -4,18 +4,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.bangkit.capstone.nutri_a.model.User
+import com.bangkit.capstone.nutri_a.model.Auth
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import kotlinx.coroutines.launch
 
 class SharedViewModel(private val pref: UserPreference) : ViewModel() {
-    fun getUser() : LiveData<User> {
+    fun getUser() : LiveData<Auth> {
         return pref.getUser().asLiveData()
     }
 
-    fun saveUser(user: User) {
+    fun saveUser(auth: Auth) {
         viewModelScope.launch {
-            pref.saveUser(user)
+            pref.saveUser(auth)
         }
     }
 

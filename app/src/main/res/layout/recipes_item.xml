@@ -16,7 +16,7 @@
         android:layout_height="116dp">
 
         <ImageView
-            android:id="@+id/img_photo"
+            android:id="@+id/iv_photo"
             android:layout_width="98dp"
             android:layout_height="117dp"
             android:scaleType="centerCrop"
@@ -30,53 +30,19 @@
 
         <TextView
             android:id="@+id/tv_name"
-            android:layout_width="266dp"
-            android:layout_height="31dp"
-            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/food_name"
             android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.516"
-            app:layout_constraintStart_toEndOf="@+id/img_photo"
-            app:layout_constraintTop_toTopOf="@+id/img_photo"
-            app:layout_constraintVertical_bias="0.081" />
-
-        <ImageView
-            android:id="@+id/iv_calories"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:layout_marginBottom="24dp"
-            android:src="@drawable/ic_calories"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tv_name"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:id="@+id/tv_calories"
-            android:layout_width="35dp"
-            android:layout_height="23dp"
-            android:layout_marginHorizontal="4dp"
-            android:layout_marginStart="8dp"
-            android:text="@string/value_calories"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_calories"
-            app:layout_constraintStart_toEndOf="@+id/iv_calories"
-            app:layout_constraintTop_toTopOf="@+id/iv_calories" />
-
-        <TextView
-            android:id="@+id/tv_calories_word"
-            android:layout_width="83dp"
-            android:layout_height="23dp"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginEnd="80dp"
-            android:text="@string/text_calories"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_calories"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tv_calories"
-            app:layout_constraintTop_toTopOf="@+id/tv_calories" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/iv_photo"
+            app:layout_constraintTop_toTopOf="@+id/iv_photo"
+            app:layout_constraintVertical_bias="0.183" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_detail"

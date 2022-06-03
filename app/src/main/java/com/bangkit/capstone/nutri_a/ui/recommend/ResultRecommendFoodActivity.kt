@@ -8,10 +8,9 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bangkit.capstone.nutri_a.adapter.FoodDayAdapter
-import com.bangkit.capstone.nutri_a.adapter.FoodMorningAdapter
-import com.bangkit.capstone.nutri_a.adapter.FoodNightAdapter
+import com.bangkit.capstone.nutri_a.adapter.FoodAdapter
 import com.bangkit.capstone.nutri_a.databinding.ActivityResultRecommendFoodBinding
+import com.bangkit.capstone.nutri_a.model.DataFood
 import com.bangkit.capstone.nutri_a.response.InformationParam
 import com.bangkit.capstone.nutri_a.response.MalamItemParam
 import com.bangkit.capstone.nutri_a.response.PagiItemParam
@@ -32,6 +31,7 @@ class ResultRecommendFoodActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultRecommendFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         setupViewModel()
 
@@ -68,53 +68,53 @@ class ResultRecommendFoodActivity : AppCompatActivity() {
     }
 
     private fun setDataMorning(items: List<PagiItemParam>) {
-        val listFood = ArrayList<PagiItemParam>()
+        val listFood = ArrayList<DataFood>()
         for(item in items) {
-            val pagi = PagiItemParam(
+            val morning = DataFood(
                 item.nama,
                 item.energiEnergy,
                 item.karbohidratCHO,
                 item.lemakFat,
                 item.proteinProtein
             )
-            listFood.add(pagi)
+            listFood.add(morning)
         }
 
-        val adapter = FoodMorningAdapter(listFood)
+        val adapter = FoodAdapter(listFood)
         binding.rvMorning.adapter = adapter
     }
 
     private fun setDataAfternoon(items: List<SiangItemParam>) {
-        val listFood = ArrayList<SiangItemParam>()
+        val listFood = ArrayList<DataFood>()
         for(item in items) {
-            val siang = SiangItemParam(
+            val day = DataFood(
                 item.nama,
                 item.energiEnergy,
                 item.karbohidratCHO,
                 item.lemakFat,
                 item.proteinProtein
             )
-            listFood.add(siang)
+            listFood.add(day)
         }
 
-        val adapter = FoodDayAdapter(listFood)
+        val adapter = FoodAdapter(listFood)
         binding.rvDay.adapter = adapter
     }
 
     private fun setDataNight(items: List<MalamItemParam>) {
-        val listFood = ArrayList<MalamItemParam>()
+        val listFood = ArrayList<DataFood>()
         for(item in items) {
-            val malam = MalamItemParam(
+            val night = DataFood(
                 item.nama,
                 item.energiEnergy,
                 item.karbohidratCHO,
                 item.lemakFat,
                 item.proteinProtein
             )
-            listFood.add(malam)
+            listFood.add(night)
         }
 
-        val adapter = FoodNightAdapter(listFood)
+        val adapter = FoodAdapter(listFood)
         binding.rvNight.adapter = adapter
     }
 }

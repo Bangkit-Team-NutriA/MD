@@ -1,15 +1,14 @@
 package com.bangkit.capstone.nutri_a.adapter
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.capstone.nutri_a.R
-import com.bangkit.capstone.nutri_a.response.SiangItemParam
+import com.bangkit.capstone.nutri_a.model.DataFood
 
-class FoodDayAdapter(private val listFood: ArrayList<SiangItemParam>) : RecyclerView.Adapter<FoodDayAdapter.ViewHolder>(){
+class FoodAdapter(private val listFood: ArrayList<DataFood>) : RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvName: TextView = view.findViewById(R.id.tv_name)
         val tvCarbo: TextView = view.findViewById(R.id.tv_carbohydrate)
@@ -23,11 +22,13 @@ class FoodDayAdapter(private val listFood: ArrayList<SiangItemParam>) : Recycler
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.tvName.text = listFood[position].nama
-        viewHolder.tvCarbo.text = listFood[position].karbohidratCHO
-        viewHolder.tvProtein.text = listFood[position].proteinProtein
-        viewHolder.tvFat.text = listFood[position].lemakFat
-        viewHolder.tvCalories.text = listFood[position].energiEnergy
+        viewHolder.tvName.text = listFood[position].name
+        viewHolder.tvCarbo.text = listFood[position].carbo
+        viewHolder.tvProtein.text = listFood[position].protein
+        viewHolder.tvFat.text = listFood[position].fat
+        viewHolder.tvCalories.text = listFood[position].calories
+
+
     }
 
     override fun getItemCount(): Int {

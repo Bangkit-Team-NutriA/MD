@@ -126,6 +126,9 @@
     <string name="success_predict_picture">Success to Predict Picture</string>
     <string name="success_calculate_food">Success to Calculate Food</string>
     <string name="failed_calculate_food">Failed to Calculate Food</string>
+    <string name="email_not_registered">Email is not registered</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="try_again">Try Again</string>
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">

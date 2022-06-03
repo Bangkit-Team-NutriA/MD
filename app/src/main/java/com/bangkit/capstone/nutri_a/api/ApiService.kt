@@ -4,7 +4,7 @@ import com.bangkit.capstone.nutri_a.response.*
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.*
-import java.util.*
+
 
 interface ApiService {
 
@@ -55,7 +55,9 @@ interface ApiService {
     @GET("recipes")
     fun getRecommendRecipes(
         @Header("Authorization") header: String,
+        @Query("ingredients") ingredients: List<Int>
     ):Call<RecommendRecipesResponse>
+
 
     @GET("meals")
     fun getRecommendParam(
@@ -65,12 +67,12 @@ interface ApiService {
         @Query("height") height: Int,
         @Query("timesOfExercise") timesOfExercise: Int,
         @Query("age") age: Int
-    ):Call<RecommendParamResponse>
+    ):Call<RecommendFoodResponse>
 
     @GET("meals")
     fun getRecommendNonParam(
         @Header("Authorization") header: String
-    ):Call<RecommendNonParamResponse>
+    ):Call<RecommendFoodResponse>
 
     @FormUrlEncoded
     @PUT("users")

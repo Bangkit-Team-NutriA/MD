@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.api.ApiConfig
 import com.bangkit.capstone.nutri_a.databinding.ActivityLoginBinding
-import com.bangkit.capstone.nutri_a.model.User
+import com.bangkit.capstone.nutri_a.model.Auth
 import com.bangkit.capstone.nutri_a.response.LoginResponse
 import com.bangkit.capstone.nutri_a.ui.home.HomeActivity
 import com.bangkit.capstone.nutri_a.utils.UserPreference
@@ -85,12 +85,12 @@ class LoginActivity : AppCompatActivity() {
                 val responseBody = response.body()
                 Log.d(TAG, "onResponse: $responseBody")
                 if(response.isSuccessful && responseBody?.status == "success") {
-                    viewModel.saveUser(User(responseBody.token, true))
+                    viewModel.saveUser(Auth(responseBody.token, true))
                     Toast.makeText(this@LoginActivity, getString(R.string.login_success), Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
-                } else {
+                }  else {
                     Log.e(TAG, "onFailure1: ${response.message()}")
                     Toast.makeText(this@LoginActivity, getString(R.string.login_failed), Toast.LENGTH_SHORT).show()
                 }

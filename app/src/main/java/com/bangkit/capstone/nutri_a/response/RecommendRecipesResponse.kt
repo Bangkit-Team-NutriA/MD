@@ -11,6 +11,21 @@ data class RecommendRecipesResponse(
 	val status: String? = null
 )
 
+data class Nutrisi(
+
+	@field:SerializedName("Energi (Energy)")
+	val energiEnergy: String? = null,
+
+	@field:SerializedName("Lemak (Fat)")
+	val lemakFat: String? = null,
+
+	@field:SerializedName("Karbohidrat (CHO)")
+	val karbohidratCHO: String? = null,
+
+	@field:SerializedName("Protein (Protein)")
+	val proteinProtein: String? = null
+)
+
 data class DataItem(
 
 	@field:SerializedName("Cara")
@@ -33,19 +48,4 @@ data class DataItem(
 
 	@field:SerializedName("Url")
 	val url: String? = null
-)
-
-data class Nutrisi(
-
-	@field:SerializedName("Energi (Energy)")
-	val energiEnergy: String? = null,
-
-	@field:SerializedName("Lemak (Fat)")
-	val lemakFat: String? = null,
-
-	@field:SerializedName("Karbohidrat (CHO)")
-	val karbohidratCHO: String? = null,
-
-	@field:SerializedName("Protein (Protein)")
-	val proteinProtein: String? = null
 )
