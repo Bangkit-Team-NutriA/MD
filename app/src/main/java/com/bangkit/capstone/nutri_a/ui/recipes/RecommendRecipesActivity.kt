@@ -38,6 +38,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
 
     private lateinit var dataRecipes: List<DataItem>
 
+    private lateinit var dataBahan: List<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -48,9 +49,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         actionBar?.title = "Rekomendasi Resep"
         setupViewModel()
-
-
-
+        dataBahan = resources.getStringArray(R.array.input_ingredients).toList()
 
         val spinner1: Spinner = findViewById(R.id.inputIngredients_1)
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -160,7 +159,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
 
-                            dataRecipes = (responseBody.data as List<DataItem>?)!!
+                            val dataRecipes = responseBody.data
                             val intent = Intent(this@RecommendRecipesActivity, ListRecommendRecipesActivity::class.java)
 
                             val gson = Gson()

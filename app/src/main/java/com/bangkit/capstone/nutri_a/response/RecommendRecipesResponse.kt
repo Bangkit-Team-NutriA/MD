@@ -1,8 +1,6 @@
 package com.bangkit.capstone.nutri_a.response
 
-import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import kotlinx.parcelize.Parcelize
 
 data class RecommendRecipesResponse(
 
@@ -13,7 +11,6 @@ data class RecommendRecipesResponse(
 	val status: String? = null
 )
 
-@Parcelize
 data class Nutrisi(
 
 	@field:SerializedName("Energi (Energy)")
@@ -27,7 +24,7 @@ data class Nutrisi(
 
 	@field:SerializedName("Protein (Protein)")
 	val proteinProtein: String? = null
-) : Parcelable
+)
 
 data class DataItem(
 

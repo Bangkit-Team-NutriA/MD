@@ -136,6 +136,7 @@
 
     <!-- TODO: (dropdown menu) -->
     <string-array name="input_ingredients">
+        <item>-</item>
         <item>agar agar powder</item>
         <item>agarasa coklat</item>
         <item>air</item>

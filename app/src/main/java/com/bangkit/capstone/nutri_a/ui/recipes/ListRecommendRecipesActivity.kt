@@ -35,18 +35,16 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         binding.rvRecipes.layoutManager = layoutManager
 
-        val gson = Gson()
-        val data = gson.fromJson(intent.getStringExtra("dataRecipes"), DataItem::class.java)
-
-
-        getData(data as List<DataItem>)
+        getData()
 
     }
 
-    private fun getData(data: List<DataItem>){
+    private fun getData(){
 
+        val gson = Gson()
+        val data = gson.fromJson(intent.getStringExtra("dataRecipes"), DataItem::class.java)
 
-        setData(data)
+        setData(data as List<DataItem>)
 
     }
 
@@ -62,8 +60,10 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
                 item.bahan2,
                 item.url
             )
+
             listRecipes.add(recipes)
         }
+
         val adapter = RecipesAdapter(listRecipes)
         binding.rvRecipes.adapter = adapter
     }
