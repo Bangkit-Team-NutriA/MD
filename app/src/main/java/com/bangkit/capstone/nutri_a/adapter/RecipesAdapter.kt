@@ -21,6 +21,13 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : RecyclerView.Adapter<RecipesAdapter.ViewHolder>()  {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+
+        fun bind(dataResep : DataRecipes){
+            with(itemView){
+
+            }
+
+        }
         val tvName: TextView = view.findViewById(R.id.tv_name)
         val ivImage: ImageView = view.findViewById(R.id.iv_photo)
         val btnDetail: Button = view.findViewById(R.id.btn_detail)

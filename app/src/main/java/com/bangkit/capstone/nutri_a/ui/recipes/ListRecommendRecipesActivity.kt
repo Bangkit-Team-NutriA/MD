@@ -39,11 +39,11 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
         val data = gson.fromJson(intent.getStringExtra("dataRecipes"), DataItem::class.java)
 
 
-        getData(data as ArrayList<DataItem>)
+        getData(data as List<DataItem>)
 
     }
 
-    private fun getData(data : ArrayList<DataItem>){
+    private fun getData(data: List<DataItem>){
 
 
         setData(data)
@@ -54,13 +54,16 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
         val listRecipes = ArrayList<DataRecipes>()
         for(item in items) {
             val recipes = DataRecipes(
+                item.cara,
                 item.nama,
+                item.nutrisi,
+                item.deskripsi,
+                item.bahan,
+                item.bahan2,
                 item.url
             )
-
             listRecipes.add(recipes)
         }
-
         val adapter = RecipesAdapter(listRecipes)
         binding.rvRecipes.adapter = adapter
     }

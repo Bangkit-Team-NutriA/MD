@@ -36,7 +36,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecommendRecipesBinding
 
-    private lateinit var dataItem: DataItem
+    private lateinit var dataRecipes: List<DataItem>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -160,7 +160,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
 
-                            val dataRecipes = responseBody.data
+                            dataRecipes = (responseBody.data as List<DataItem>?)!!
                             val intent = Intent(this@RecommendRecipesActivity, ListRecommendRecipesActivity::class.java)
 
                             val gson = Gson()
