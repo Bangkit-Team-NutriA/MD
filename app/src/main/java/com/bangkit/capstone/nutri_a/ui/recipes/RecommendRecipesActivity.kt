@@ -123,6 +123,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
         }
 
 
+
     }
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
@@ -168,7 +169,10 @@ class RecommendRecipesActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
 
-                            val dataRecipes = responseBody.data
+                            val dataRecipes = object {
+                                val data = responseBody.data
+                            }
+                            Log.e("data1",dataRecipes.data.toString())
                             val intent = Intent(this@RecommendRecipesActivity, ListRecommendRecipesActivity::class.java)
 
                             val gson = Gson()

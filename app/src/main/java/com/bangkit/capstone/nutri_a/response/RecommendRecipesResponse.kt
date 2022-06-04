@@ -25,7 +25,12 @@ data class Nutrisi(
 	@field:SerializedName("Protein (Protein)")
 	val proteinProtein: String? = null
 )
+data class Item(
 
+	@field:SerializedName("data")
+	val data: List<DataItem?>? = null,
+
+)
 data class DataItem(
 
 	@field:SerializedName("Cara")
