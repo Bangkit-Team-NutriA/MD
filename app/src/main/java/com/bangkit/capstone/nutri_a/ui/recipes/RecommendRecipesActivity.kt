@@ -165,7 +165,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
                         if (response.isSuccessful && responseBody?.status == "success") {
                             Toast.makeText(
                                 this@RecommendRecipesActivity,
-                                getString(R.string.success_calculate_food),
+                                getString(R.string.success_calculate_recipes),
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -178,11 +178,6 @@ class RecommendRecipesActivity : AppCompatActivity() {
                             val gson = Gson()
                             intent.putExtra("dataRecipes", gson.toJson(dataRecipes))
 
-                            Toast.makeText(
-                                this@RecommendRecipesActivity,
-                                "$dataRecipes",
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                             startActivity(intent)
                             finish()

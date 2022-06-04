@@ -210,10 +210,6 @@ class RecommendFoodActivity : AppCompatActivity() {
                             startActivity(intent)
                             finish()
 
-                            Toast.makeText(
-                                this@RecommendFoodActivity, "${dataFood.pagi}",
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                         } else {
                             showLoading(false)

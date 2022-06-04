@@ -73,11 +73,6 @@ class ProfileFragment : Fragment() {
                         val responseBody = response.body()
                         Log.d(HomeActivity.TAG, "onResponse: $responseBody")
                         if (response.isSuccessful && responseBody?.status == "success") {
-                            Toast.makeText(
-                                requireContext(),
-                                getString(R.string.success_get_data_user),
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                             val data = responseBody.data
 
@@ -93,11 +88,6 @@ class ProfileFragment : Fragment() {
                                 gender = "Perempuan"
                             }
 
-
-                            Toast.makeText(
-                                requireContext(), "$gender",
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                             setViewProfile(name, gender,heightInput,weightInput)
 

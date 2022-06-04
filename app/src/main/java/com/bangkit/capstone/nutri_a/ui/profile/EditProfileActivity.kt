@@ -198,10 +198,13 @@ class EditProfileActivity : AppCompatActivity() {
         val name = dataUser.nama.toString()
         val height = dataUser.tinggi.toString()
         val weight = dataUser.berat.toString()
-
-        binding.etName.hint = name
-        binding.etWeight.hint = weight
-        binding.etHeight.hint = height
+        val gender = dataUser.jeniskelamin
+        if (gender == false) {
+            binding.radioWoman.isChecked = true
+        }
+        binding.etName.setText(name)
+        binding.etWeight.setText(weight)
+        binding.etHeight.setText(height)
     }
 
     private val editProfile: TextWatcher = object : TextWatcher {

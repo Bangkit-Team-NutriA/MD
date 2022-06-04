@@ -47,7 +47,6 @@ class ResultCaloriesActivity : AppCompatActivity() {
 
     private fun getCalories() {
         val name = intent.getStringExtra("nameFood")
-        binding.tvName.text = name
 
         val gson = Gson()
         val data = gson.fromJson(intent.getStringExtra("dataFood"), InformationCalories::class.java)
@@ -59,7 +58,7 @@ class ResultCaloriesActivity : AppCompatActivity() {
             .load(picture)
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.imgPhoto)
-
+        binding.tvName.text = name + " (" + data.serving + ")"
         binding.tvCaloriesValue.text = data.kalori
         binding.tvCarbohydrateValue.text = data.karbohidrat
         binding.tvProteinValue.text = data.protein

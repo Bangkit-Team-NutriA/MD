@@ -86,11 +86,6 @@ class HomeActivity : AppCompatActivity() {
                         val responseBody = response.body()
                         Log.d(TAG, "onResponse: $responseBody")
                         if (response.isSuccessful && responseBody?.status == "success") {
-                            Toast.makeText(
-                                this@HomeActivity,
-                                getString(R.string.success_get_data_user),
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                             val data = responseBody.data
 
@@ -105,12 +100,6 @@ class HomeActivity : AppCompatActivity() {
                             } else if (genderBoolean == false) {
                                 gender = "Wanita"
                             }
-
-
-                            Toast.makeText(
-                                this@HomeActivity, "$gender",
-                                Toast.LENGTH_SHORT
-                            ).show()
 
                         } else {
                             Log.e(TAG, "onFailure1: ${response.message()}")

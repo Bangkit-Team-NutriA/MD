@@ -125,6 +125,7 @@
     <string name="edit_profile_failed">Failed to Edit Profile</string>
     <string name="success_predict_picture">Success to Predict Picture</string>
     <string name="success_calculate_food">Success to Calculate Food</string>
+    <string name="success_calculate_recipes">Success to Calculate Recipes</string>
     <string name="failed_calculate_food">Failed to Calculate Food</string>
     <string name="email_not_registered">Email is not registered</string>
     <string name="wrong_password">Wrong Password</string>
