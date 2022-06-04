@@ -213,7 +213,8 @@ class SearchCaloriesActivity : AppCompatActivity() {
         if (it.resultCode == CAMERA_X_RESULT) {
             val myFile = it.data?.getSerializableExtra("picture") as File
             val isBackCamera = it.data?.getBooleanExtra("isBackCamera", true) as Boolean
-            getFile = myFile
+            val file = reduceFileImage(myFile)
+            getFile = file
 
             val result = rotateBitmap(
                 BitmapFactory.decodeFile(myFile.path),

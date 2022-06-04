@@ -36,7 +36,7 @@ class RecommendRecipesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRecommendRecipesBinding
 
-    private lateinit var dataRecipes: List<DataItem>
+    private lateinit var dataItem: DataItem
 
     private lateinit var dataBahan: List<String>
 
@@ -115,12 +115,14 @@ class RecommendRecipesActivity : AppCompatActivity() {
             // Apply the adapter to the spinner
             spinner5.adapter = adapter
         }
-
-        val ingredient: List<Int> = listOf(0, 2, 3, 4, 5)
+        val spinnerAll: List<Spinner> = listOf(spinner1, spinner2, spinner3, spinner4, spinner5)
 
         binding.btnSearch.setOnClickListener {
+            val ingredient: List<Int> = getIngredientsIndex(spinnerAll)
             getRecommendRecipes(ingredient)
         }
+
+
 
     }
     override fun onSupportNavigateUp(): Boolean {
@@ -135,7 +137,15 @@ class RecommendRecipesActivity : AppCompatActivity() {
         )[SharedViewModel::class.java]
     }
 
-
+    private fun getIngredientsIndex(spinner: List<Spinner>) : List<Int> {
+        var ingredient: List<Int> = listOf()
+        for (item in spinner) {
+            if (item.selectedItem.toString() != "-") {
+                ingredient += dataBahan.indexOf((item.selectedItem.toString()))-1
+            }
+        }
+        return ingredient
+    }
     private fun getRecommendRecipes(ingredient: List<Int>){
         showLoading(true)
         viewModel.getUser().observe(this) {
@@ -159,7 +169,10 @@ class RecommendRecipesActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
 
-                            val dataRecipes = responseBody.data
+                            val dataRecipes = object {
+                                val data = responseBody.data
+                            }
+                            Log.e("data1",dataRecipes.data.toString())
                             val intent = Intent(this@RecommendRecipesActivity, ListRecommendRecipesActivity::class.java)
 
                             val gson = Gson()

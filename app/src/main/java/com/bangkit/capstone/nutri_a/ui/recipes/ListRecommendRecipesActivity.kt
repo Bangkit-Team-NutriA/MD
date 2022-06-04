@@ -3,6 +3,7 @@ package com.bangkit.capstone.nutri_a.ui.recipes
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -42,9 +43,9 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
     private fun getData(){
 
         val gson = Gson()
-        val data = gson.fromJson(intent.getStringExtra("dataRecipes"), DataItem::class.java)
-
-        setData(data as List<DataItem>)
+        val data = gson.fromJson(intent.getStringExtra("dataRecipes"), Item::class.java)
+        Log.e("data",data.toString())
+        setData(data.data as List<DataItem>)
 
     }
 

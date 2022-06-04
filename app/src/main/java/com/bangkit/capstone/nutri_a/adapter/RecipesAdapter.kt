@@ -2,6 +2,7 @@ package com.bangkit.capstone.nutri_a.adapter
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,9 +20,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 
-class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : RecyclerView.Adapter<RecipesAdapter.ViewHolder>()  {
+class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : RecyclerView.Adapter<RecipesAdapter.ViewHolder>(){
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
 
         val tvName: TextView = view.findViewById(R.id.tv_name)
         val ivImage: ImageView = view.findViewById(R.id.iv_photo)
@@ -50,7 +50,12 @@ class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : Recycle
             )
 
             val intent = Intent(viewHolder.itemView.context, ListRecommendRecipesActivity::class.java)
-            intent.putExtra(DetailRecipesActivity.TAG, listRecipes[position])
+//            val bundle = Bundle()
+//            bundle.putParcelable(DetailRecipesActivity.TAG, listRecipes[position]);
+//            intent.putExtras(bundle);
+            val recipes =  listRecipes[position]
+            intent.putExtra(DetailRecipesActivity.TAG, recipes)
+
             viewHolder.itemView.context.startActivity(intent, optionsCompat.toBundle())
         }
     }
