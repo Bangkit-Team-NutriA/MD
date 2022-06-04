@@ -49,10 +49,8 @@ class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : Recycle
                 Pair(viewHolder.tvName, "tv_name_detail_transition"),
             )
 
-            val intent = Intent(viewHolder.itemView.context, ListRecommendRecipesActivity::class.java)
-//            val bundle = Bundle()
-//            bundle.putParcelable(DetailRecipesActivity.TAG, listRecipes[position]);
-//            intent.putExtras(bundle);
+            val intent = Intent(viewHolder.itemView.context, DetailRecipesActivity::class.java)
+
             val recipes =  listRecipes[position]
             intent.putExtra(DetailRecipesActivity.TAG, recipes)
 
