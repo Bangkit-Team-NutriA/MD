@@ -9,6 +9,7 @@ class DetailRecipesActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_recipes)
+
     }
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()

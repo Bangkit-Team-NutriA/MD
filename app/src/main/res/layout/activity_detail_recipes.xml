@@ -214,7 +214,7 @@
 
 
         <TextView
-            android:id="@+id/tv_description_detail"
+            android:id="@+id/tv_ingredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
@@ -227,6 +227,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_carbohydrate_value"
             app:layout_constraintVertical_bias="1.0" />
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
