@@ -22,8 +22,10 @@ class DetailRecipesActivity : AppCompatActivity() {
 
         val recipes = intent.getParcelableExtra<DataRecipes>(TAG) as DataRecipes
 
+        val url = recipes.Url
+        val photo = url?.lowercase()
         Glide.with(this)
-            .load(recipes.Url)
+            .load(photo)
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.imgPhoto)
 

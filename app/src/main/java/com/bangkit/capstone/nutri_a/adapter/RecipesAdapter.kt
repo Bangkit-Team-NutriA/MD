@@ -34,8 +34,11 @@ class RecipesAdapter (private val listRecipes: ArrayList<DataRecipes>) : Recycle
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         viewHolder.tvName.text = listRecipes[position].Nama
 
+        val photo = listRecipes[position].Url.toString()
+        val url = photo.lowercase()
+
         Glide.with(viewHolder.itemView.context)
-            .load(listRecipes[position].Url)
+            .load(url)
             .into(viewHolder.ivImage)
 
         viewHolder.btnDetail.setOnClickListener {
