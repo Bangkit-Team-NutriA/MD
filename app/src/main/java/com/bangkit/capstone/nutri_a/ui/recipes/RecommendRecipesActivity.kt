@@ -17,7 +17,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.api.ApiConfig
 import com.bangkit.capstone.nutri_a.databinding.ActivityRecommendRecipesBinding
-import com.bangkit.capstone.nutri_a.response.DataItem
 import com.bangkit.capstone.nutri_a.response.RecommendRecipesResponse
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel

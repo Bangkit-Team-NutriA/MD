@@ -2,7 +2,6 @@ package com.bangkit.capstone.nutri_a.ui.search_calories
 
 import android.content.Context
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences

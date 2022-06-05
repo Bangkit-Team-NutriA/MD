@@ -2,7 +2,6 @@ package com.bangkit.capstone.nutri_a.ui.home
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -19,11 +18,9 @@ import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.api.ApiConfig
 import com.bangkit.capstone.nutri_a.databinding.ActivityNutritionCalculateBinding
 import com.bangkit.capstone.nutri_a.response.CalculatorResponse
-import com.bangkit.capstone.nutri_a.ui.signup.LoginActivity
 import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
-import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

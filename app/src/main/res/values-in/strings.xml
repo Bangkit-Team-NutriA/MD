@@ -139,7 +139,25 @@
     <string name="value_carbohydrate_needs">225 gr</string>
     <string name="value_protein_needs">57 gr</string>
     <string name="value_fat_needs">25 gr</string>
-    <string name="ingredients_rule">Minimal pilih 2 bahan makanan</string>
+    <string name="ingredients_rule">Minimal pilih 2 bahan makanan</string><string name="team_name">Bangkit 2022 C22-PS014 Product Capstone</string>
+    <string name="nutria_tagline">Nutri-A [Cek Nutrisi Hanya Seujung Jari]</string>
+    <string name="nutria_description">Nama project kami nutri-A dengan tagline \'cek nutrisi hanya seujung jari\', dalam aplikasi ini kami memiliki 3 fitur utama yaitu :</string>
+    <string name="list_space">-</string>
+    <string name="food_image_about">Klasifikasi citra makanan dan memberikan informasi nutrisi seperti lemak, protein, karbohidrat dan juga energi/kalori (dalam fitur ini kita menggunakan deep learning.</string>
+    <string name="meal_about">Rekomendasi makanan , jadi kami scrape data dari panganku.org dan kami mencari kombinasi makanan yang optimal untuk nutrisi yang dibutuhkan pengguna (kami menggunakan algoritma genetika).</string>
+    <string name="recipes_about">Rekomendasi resep, kami scrape data dari fatsecret.co.id dan merekomendasikan resep berdasarkan bahan-bahan yang dimasukkan pengguna dan memberikan informasi nutrisi juga (kami menggunakan jarak terdekat).</string>
+    <string name="our_team">Tim Kami</string>
+    <string name="zico_name">Zicola Vladimir Viky Khan</string>
+    <string name="ml">Machine Learning</string>
+    <string name="victor_name">Victorio Valendion</string>
+    <string name="zayin_name">Zayyinah Zannuba Arifah Chofsoh</string>
+    <string name="fauzan_name">Fauzan Nursalma Mawardi</string>
+    <string name="md">Mobile Development</string>
+    <string name="yanuar_name">Yanuar Andi Rahman</string>
+    <string name="chaira_name">Chaira Qalbyassalam</string>
+    <string name="cc">Cloud Computing</string>
+    <string name="text_logo">Nutri-A</string>
+    <string name="title_faq">FAQ</string>
 
     <!-- Dropdown menu -->
     <string-array name="input_ingredients">
