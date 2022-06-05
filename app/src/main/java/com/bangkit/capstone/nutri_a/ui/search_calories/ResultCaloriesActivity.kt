@@ -34,7 +34,6 @@ class ResultCaloriesActivity : AppCompatActivity() {
 
         getCalories()
 
-        supportActionBar?.title = "Result Calories!"
 
     }
 

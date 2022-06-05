@@ -25,7 +25,7 @@
                 android:id="@+id/tv_count_calories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ayo cari rekomendasi makanan sesuai \nKebutuhan nutrisimu!"
+                android:text="@string/prompt_recommend_meals"
                 android:textColor="@color/crayola"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -121,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14sp"
-                android:text="@string/text_workout_week"
+                android:text="@string/text_exercise_week"
                 android:textColor="@color/crayola"
                 android:textSize="14sp" />
 

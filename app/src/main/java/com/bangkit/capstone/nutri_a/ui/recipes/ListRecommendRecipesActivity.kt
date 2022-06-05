@@ -9,6 +9,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bangkit.capstone.nutri_a.R
 import com.bangkit.capstone.nutri_a.adapter.RecipesAdapter
 import com.bangkit.capstone.nutri_a.databinding.ActivityListRecommendRecipesBinding
 import com.bangkit.capstone.nutri_a.model.DataRecipes
@@ -26,10 +27,11 @@ class ListRecommendRecipesActivity : AppCompatActivity() {
     private lateinit var viewModel: SharedViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = ActivityListRecommendRecipesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        actionBar?.title = R.string.title_result_recipes.toString()
 
-        super.onCreate(savedInstanceState)
 
         setupViewModel()
 

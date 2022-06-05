@@ -30,7 +30,9 @@
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_height.xml" value="0.1015" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.118" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1815" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_logo.xml" value="0.118" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_password_custom.xml" value="0.1015" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_person.xml" value="0.118" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/drawable/ic_setting.xml" value="0.1015" />
@@ -38,7 +40,7 @@
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout-v28/bottom_navigation.xml" value="0.11398176291793313" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_about.xml" value="0.1" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_camera.xml" value="0.1923899102180419" />
-        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_detail_recipes.xml" value="0.152" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_detail_recipes.xml" value="0.264" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_edit_profile.xml" value="0.2" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_faqactivity.xml" value="0.20222317229585293" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_home.xml" value="0.136" />
@@ -52,14 +54,14 @@
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_recommend_recipes.xml" value="0.2" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_register.xml" value="0.10224438902743142" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_result_calories.xml" value="0.144" />
-        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_result_recommend_food.xml" value="0.1" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_result_recommend_food.xml" value="0.2" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_search_calories.xml" value="0.1923899102180419" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/activity_settings.xml" value="0.264" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/bottom_navigation.xml" value="0.2" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/food_item.xml" value="0.4" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/food_items.xml" value="0.1911073108165883" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_dashboard.xml" value="0.16545532278751604" />
-        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_home.xml" value="0.3166089965397924" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_notifications.xml" value="0.16545532278751604" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/fragment_recipes.xml" value="0.1" />
@@ -67,6 +69,8 @@
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/layout/recipes_item.xml" value="0.4" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16545532278751604" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1025" />
         <entry key="..\:/Application/AndroidStudioProject/Bangkit/NutriA/app/src/main/res/xml/network_security_config.xml" value="0.1" />
         <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/bg_button.xml" value="0.1" />
         <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1275" />
@@ -89,10 +93,12 @@
         <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_recipes.xml" value="0.25" />
         <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/fragment_recommend.xml" value="0.264" />
         <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/Android/MD/app/src/main/res/layout/recipes_item.xml" value="0.25" />
-        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/MD/MD/app/src/main/res/layout/activity_list_recommend_recipes.xml" value="0.25" />
-        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/MD/MD/app/src/main/res/layout/activity_recommend_recipes.xml" value="0.1480978260869565" />
-        <entry key="..\:/Kampus Merdeka/Bangkit/NUTRI-A/MD/MD/app/src/main/res/layout/recipes_item.xml" value="0.25" />
+        <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/layout/activity_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/layout/activity_nutrition_calculate.xml" value="0.17831813576494426" />
         <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/layout/activity_register.xml" value="0.2953125" />
+        <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/layout/fragment_profile.xml" value="0.17831813576494426" />
+        <entry key="..\:/bangkit/Bangkit/Capstone/MD/MD/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

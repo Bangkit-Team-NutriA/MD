@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:orientation="vertical"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -46,7 +46,8 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:paddingTop="9dp"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,13 +79,14 @@
                 android:background="@drawable/bg_edit_text"
                 android:ems="10"
                 android:paddingTop="9dp"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal"
+                android:autofillHints="" />
 
             <TextView
                 android:id="@+id/tv_gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_sex"
+                android:text="@string/text_gender"
                 android:textSize="14sp"
                 android:textColor="@color/crayola"
                 android:layout_marginTop="14sp"/>
@@ -140,7 +142,7 @@
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="20dp"
-            android:text="Calculate Your Nutrition"
+            android:text="@string/text_calculate_your_nutrition"
             android:textSize="14sp"
             android:enabled="false"
             app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Kebutuhan Nutrisi Harianmu"
+                android:text="@string/title_nutrition_needs"
                 android:textColor="@color/crayola"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -179,8 +181,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:text="Calories"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/calories"
                     android:textColor="@color/crayola"
                     android:textSize="18sp" />
 
@@ -188,8 +190,8 @@
                     android:id="@+id/tv_calories_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="1500 Kal"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/value_calories"
                     android:textColor="@color/crayola"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -204,8 +206,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:text="Fat"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/fat"
                     android:textColor="@color/crayola"
                     android:textSize="16sp" />
 
@@ -213,8 +215,8 @@
                     android:id="@+id/tv_fat_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="25 gr"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/value_fat"
                     android:textColor="@color/crayola"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -229,8 +231,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:text="Protein"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/protein"
                     android:textColor="@color/crayola"
                     android:textSize="16sp" />
 
@@ -238,8 +240,8 @@
                     android:id="@+id/tv_protein_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="57 gr"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/value_protein"
                     android:textColor="@color/crayola"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -254,8 +256,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:text="Carbohydrate"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/carbohydrate"
                     android:textColor="@color/crayola"
                     android:textSize="16sp" />
 
@@ -263,8 +265,8 @@
                     android:id="@+id/tv_carbohydrate_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="225 gr"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/value_carbohydrate"
                     android:textColor="@color/crayola"
                     android:textSize="16sp"
                     android:textStyle="bold" />

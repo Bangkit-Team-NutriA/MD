@@ -16,8 +16,6 @@
             android:id="@+id/img_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="16dp"
-            android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.315"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +93,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
+
         <ImageView
             android:id="@+id/iv_carbohydrate"
             android:layout_width="80dp"
@@ -105,11 +104,10 @@
             android:textStyle="bold"
             android:transitionName="tv_name_detail_transition"
             app:layout_constraintEnd_toEndOf="@+id/tv_carbohydrate"
-            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toStartOf="@+id/tv_carbohydrate"
             app:layout_constraintTop_toBottomOf="@+id/tv_carbohydrate"
             tools:ignore="ContentDescription" />
-
 
         <ImageView
             android:id="@+id/iv_fat"
@@ -212,6 +210,35 @@
             app:layout_constraintStart_toStartOf="@+id/iv_calories"
             app:layout_constraintTop_toBottomOf="@+id/iv_calories" />
 
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:padding="6dp"
+            android:text="@string/description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_carbohydrate_value" />
+
+        <TextView
+            android:id="@+id/tv_description_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="6dp"
+            android:text="@string/description"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/tv_ingredients"
@@ -219,15 +246,60 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            android:padding="8dp"
+            android:padding="6dp"
+            android:text="@string/ingredients"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description_value"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_ingredients_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="6dp"
             android:text="@string/ingredients"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_carbohydrate_value"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredients"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:padding="6dp"
+            android:text="@string/directions"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.718"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingredients_value"
             app:layout_constraintVertical_bias="1.0" />
 
+        <TextView
+            android:id="@+id/tv_method_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="6dp"
+            android:text="@string/directions"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_method"
+            app:layout_constraintVertical_bias="0.41" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,8 +46,6 @@ class NutritionCalculateActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        actionBar?.title = "Kalkulator Nutrisi"
-
 
         setupViewModel()
 
@@ -102,7 +100,7 @@ class NutritionCalculateActivity : AppCompatActivity() {
                     age
                 )
                 client.enqueue(object : Callback<CalculatorResponse> {
-                    @SuppressLint("LongLogTag")
+                    @SuppressLint("LongLogTag", "SetTextI18n")
                     override fun onResponse(
                         call: Call<CalculatorResponse>,
                         response: Response<CalculatorResponse>
@@ -118,10 +116,22 @@ class NutritionCalculateActivity : AppCompatActivity() {
                             ).show()
                             binding.nutritionLayout.visibility = View.VISIBLE
                             val dataNutrition = responseBody.information
-                            binding.tvCaloriesValue.text = dataNutrition?.calories.toString()
-                            binding.tvCarbohydrateValue.text = dataNutrition?.carbo.toString()
-                            binding.tvProteinValue.text = dataNutrition?.protein.toString()
-                            binding.tvFatValue.text = dataNutrition?.fat.toString()
+
+                            val rawCalories = dataNutrition?.calories
+                            val calories = String.format("%.2f", rawCalories)
+                            binding.tvCaloriesValue.text = "$calories kcl"
+
+                            val rawCarbohydrate = dataNutrition?.carbo
+                            val carbohydrate = String.format("%.2f", rawCarbohydrate)
+                            binding.tvCarbohydrateValue.text = "$carbohydrate gr"
+
+                            val rawProtein = dataNutrition?.protein
+                            val protein = String.format("%.2f", rawProtein)
+                            binding.tvProteinValue.text = "$protein gr"
+
+                            val rawFat = dataNutrition?.fat
+                            val fat = String.format("%.2f", rawFat)
+                            binding.tvFatValue.text = "$fat gr"
 
                         } else {
                             showLoading(false)

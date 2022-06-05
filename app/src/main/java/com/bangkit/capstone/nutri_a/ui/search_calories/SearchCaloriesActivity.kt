@@ -56,9 +56,6 @@ class SearchCaloriesActivity : AppCompatActivity() {
         setupViewModel()
 
 
-        supportActionBar?.title = "Find out your food calories!"
-
-
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
                 this,

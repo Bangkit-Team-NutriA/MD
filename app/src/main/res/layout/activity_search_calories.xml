@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/ic_baseline_image_24"
+        android:src="@drawable/search_calories"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,16 +75,16 @@
     <ProgressBar
         android:id="@+id/progress_bar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:indeterminateTint="@color/crayola"
         android:visibility="gone"
-        android:backgroundTint="@color/crayola"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486"
+        app:layout_constraintVertical_bias="0.158"
         tools:visibility="visible" />
 
     <FrameLayout

@@ -17,6 +17,9 @@ class DetailRecipesActivity : AppCompatActivity() {
         binding = ActivityDetailRecipesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        actionBar?.title = R.string.title_detail_recipes.toString()
+
         val recipes = intent.getParcelableExtra<DataRecipes>(TAG) as DataRecipes
 
         Glide.with(this)
@@ -26,9 +29,26 @@ class DetailRecipesActivity : AppCompatActivity() {
 
         binding.tvName.text = recipes.Nama
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.tvCarbohydrateValue.text = recipes.nutrisi?.karbohidratCHO
+
+        binding.tvDescriptionValue.text = recipes.Deskripsi
+
+        val filtered1 = "[]"
+        val ingredients1 = recipes.Bahan.toString().filterNot { filtered1.indexOf(it) > -1 }
+        val ingredients2 = recipes.Bahan2.toString().filterNot { filtered1.indexOf(it) > -1 }
+        val ingredients = "$ingredients1, $ingredients2"
+        binding.tvIngredientsValue.text = ingredients
+
+        val cara = recipes.Cara.toString().filterNot { filtered1.indexOf(it) > -1 }
+        val direction = cara.replace(", ", "\n")
+        binding.tvMethodValue.text = direction
+
 
     }
+
+
+
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
