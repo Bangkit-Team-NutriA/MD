@@ -105,16 +105,9 @@ class HomeFragment : Fragment() {
         }
     }
 
-    private fun setViewProfile(username: String?) {
-        binding.username.text = username
-
-
+    private fun setViewProfile(name: String) {
+        binding.apply {
+            username.text = name
+        }
     }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-
 }

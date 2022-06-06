@@ -40,10 +40,6 @@ class SettingsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setupViewModel()
 
-        binding.layoutFaq.setOnClickListener {
-            val intent = Intent(this, FAQActivity::class.java)
-            startActivity(intent)
-        }
 
         binding.layoutAbout.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
