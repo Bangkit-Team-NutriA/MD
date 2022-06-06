@@ -13,6 +13,7 @@ import com.bangkit.capstone.nutri_a.utils.UserPreference
 import com.bangkit.capstone.nutri_a.viewmodel.SharedViewModel
 import com.bangkit.capstone.nutri_a.viewmodel.ViewModelFactory
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.google.gson.Gson
 import java.io.File
@@ -33,7 +34,11 @@ class ResultCaloriesActivity : AppCompatActivity() {
 
         getCalories()
 
+    }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun setupViewModel() {
@@ -51,11 +56,13 @@ class ResultCaloriesActivity : AppCompatActivity() {
 
         val picture: File? = intent.getSerializableExtra("imageFood") as File?
 
-
         Glide.with(this)
             .load(picture)
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
+            .skipMemoryCache(true)
             .transition(DrawableTransitionOptions.withCrossFade())
             .into(binding.imgPhoto)
+
         binding.tvName.text = name + " (" + data.serving + ")"
         binding.tvCaloriesValue.text = data.kalori
         binding.tvCarbohydrateValue.text = data.karbohidrat
