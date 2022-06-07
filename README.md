@@ -1,4 +1,4 @@
-# CC
+# MD
 
 All About code for bangkit academy capstone expecially Mobile Development
 
