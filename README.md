@@ -7,9 +7,8 @@ All About code for bangkit academy capstone expecially Mobile Development
 - Making API Configuration using Library from [Square](https://github.com/square) like [Retrofit](https://github.com/square/retrofit) and [Okhttp](https://github.com/square/okhttp)
 - Making Activity and Fragment to display our data from API and Implement Recyclerview
 - Making viewmodel by implementing Shared Preference to store user token login
-- Implement Camera for Predict Picture using CameraX
+- Implement Camera for Predict Picture using [CameraX](https://developer.android.com/jetpack/androidx/releases/camera?hl=id)
 - Implement Library Glide to display content in the form of images 
 
 
-you can see the endpoint file in here [endpoint](Endpoint.pdf) or here is the link [postman](https://documenter.getpostman.com/view/14624207/Uz5Asz7w)
 
