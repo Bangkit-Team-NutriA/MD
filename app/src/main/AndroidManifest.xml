@@ -35,10 +35,6 @@
             android:name=".ui.settings.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.settings.FAQActivity"
-            android:exported="false"
-            android:label="@string/title_faq"  />
-        <activity
             android:name=".ui.recommend.RecommendFoodActivity"
             android:exported="false"
             android:label="@string/title_recommend_food" />
