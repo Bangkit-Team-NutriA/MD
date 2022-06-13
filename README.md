@@ -1,11 +1,11 @@
 # MD
-
 All About code for bangkit academy capstone expecially Mobile Development
-<p align="center">
-  <img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/login_samsung-galaxys20-cloudblue-portrait.png">
-  <img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/home_samsung-galaxys20-cloudblue-portrait.png">
-  <img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/detail_samsung-galaxys20-cloudblue-portrait.png">
-</p>
+
+<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/login_samsung-galaxys20-cloudblue-portrait.png">
+<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/home_samsung-galaxys20-cloudblue-portrait.png">
+<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/detail_samsung-galaxys20-cloudblue-portrait.png">
+<hr>
+
 - Firstly, We making UI & UX Design in [Figma](https://www.figma.com/file/EkHvWBNpFZAokRjWd1Vxu8/Nutri-A)
 - Implementation Design UI from Figma to Layout XML on [Android Studio](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj1xsGL25v4AhXbkmYCHXiHBUcYABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESbOD2a9ncKIPagBsvRDN_QjzTY_ds-mlXHDaCTwyHMrncA4awZdlr-KJF6cPE_p8Qarj4T4zjq7qchoB3wxem6dysU5Y7mb1cvz8FP9eTdG7BftMFxM0NeeWLer36t3NS4HuatsCwV1FM_rDuXg&sig=AOD64_2RA4M_ZJL_I44B31NRYf89EIg1kA&q&adurl&ved=2ahUKEwiv67qL25v4AhVzTmwGHYweBN4Q0Qx6BAgDEAE). and We use the [Kotlin programming language](https://kotlinlang.org/)
   - In our apps we have 2 Fragment and 4 main Activity for our features.
