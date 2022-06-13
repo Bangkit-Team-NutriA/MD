@@ -1,9 +1,10 @@
 # MD
 All About code for bangkit academy capstone expecially Mobile Development
-
-<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/login_samsung-galaxys20-cloudblue-portrait.png">
-<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/home_samsung-galaxys20-cloudblue-portrait.png">
-<img width="400" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/detail_samsung-galaxys20-cloudblue-portrait.png">
+<p align="center">
+<img width="300" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/login_samsung-galaxys20-cloudblue-portrait.png">
+<img width="300" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/home_samsung-galaxys20-cloudblue-portrait.png">
+<img width="300" src="https://raw.githubusercontent.com/Bangkit-Team-NutriA/MD/master/mockup/detail_samsung-galaxys20-cloudblue-portrait.png">
+</p>
 <hr>
 
 - Firstly, We making UI & UX Design in [Figma](https://www.figma.com/file/EkHvWBNpFZAokRjWd1Vxu8/Nutri-A)
